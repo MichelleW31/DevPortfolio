@@ -8,9 +8,30 @@ import { Path } from '../../types';
 const Navigation = () => {
   return (
     <section className={styles.NavigationContainer}>
-      <NavLink to={Path.ABOUT_ME}>About</NavLink>
-      <NavLink to={Path.MY_WORK}>My Work</NavLink>
-      <NavLink to={Path.CONTACT}>Get In Touch</NavLink>
+      <NavLink
+        className={({ isActive }) => {
+          return isActive ? styles.ActiveNavLink : styles.NavLink;
+        }}
+        to={Path.ABOUT_ME}
+      >
+        About Me
+      </NavLink>
+      <NavLink
+        className={({ isActive }) => {
+          return isActive ? styles.ActiveNavLink : styles.NavLink;
+        }}
+        to={Path.MY_WORK}
+      >
+        My Work
+      </NavLink>
+      <NavLink
+        className={({ isActive }) => {
+          return isActive ? styles.ActiveNavLink : styles.NavLink;
+        }}
+        to={Path.CONTACT}
+      >
+        Get In Touch
+      </NavLink>
     </section>
   );
 };

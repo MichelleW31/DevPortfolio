@@ -1,4 +1,21 @@
 @import '../../variables/_variables.scss';
 
 .NavigationContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+
+  .NavLink {
+    color: $grey;
+    font-family: 'Inter-SemiBold';
+    font-weight: 900;
+    width: 30%;
+  }
+
+  .ActiveNavLink {
+    color: $midPurple;
+    font-family: 'Inter-SemiBold';
+    font-weight: 900;
+    width: 30%;
+  }
 }

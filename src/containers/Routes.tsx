@@ -1,5 +1,5 @@
 // BASE MODULES
-import { Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 // CUSTOM MODULES
 import { Path } from '../types';
