@@ -1,5 +1,4 @@
 // BASE MODULES
-import { useEffect, useState } from 'react';
 
 // CUSTOM MODULES
 import Logo from '../Logo/Logo';
