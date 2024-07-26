@@ -1,3 +1,5 @@
+@import '../../variables/_variables.scss';
+
 .HeaderContainer {
   display: flex;
   justify-content: center;
@@ -5,4 +7,9 @@
   -moz-box-shadow: 0px 1px 18px -8px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 1px 18px -8px rgba(0, 0, 0, 0.75);
   padding: 13px 0 13px 0;
+
+  @media (min-width: $desktopWidth) {
+    justify-content: flex-start;
+    width: 100%;
+  }
 }
