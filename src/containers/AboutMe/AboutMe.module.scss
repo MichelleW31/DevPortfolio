@@ -1,0 +1,46 @@
+@import '../../variables/_variables.scss';
+
+.AboutMeContainer {
+  padding: 45px 0px 15px;
+
+  .NameCopyContainer {
+    padding: 0px 35px;
+  }
+
+  .NameCopy {
+    color: $grey;
+    font-family: 'Inter-SemiBold';
+    font-size: 18px;
+  }
+
+  .TitleCopy {
+    color: $darkPurple;
+    font-size: 30px;
+  }
+
+  .AboutMeCopy {
+    color: $grey;
+    margin-top: 45px;
+    padding: 0px 35px;
+
+    p {
+      font-family: 'Inter-Regular';
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $desktopWidth) {
+      margin-top: 65px;
+      width: 70%;
+    }
+  }
+
+  .AboutMeTitle {
+    font-family: 'Inter-SemiBold';
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding: 105px 0px 15px;
+  }
+}

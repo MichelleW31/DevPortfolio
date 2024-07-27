@@ -1,0 +1,22 @@
+@import '../../variables/_variables.scss';
+
+.BarContainer {
+  border-right: none;
+  position: relative;
+}
+
+/* for hiding the portion except the border 
+   of the triangle shape */
+.BarContainer::before {
+  content: '';
+  position: absolute;
+  right: -1px;
+  bottom: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-right: 40px solid $lightPurple;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  z-index: 1001;
+}
