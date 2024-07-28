@@ -4,14 +4,19 @@
 import styles from './Bar.module.scss';
 
 interface BarProps {
+  bgColor: string;
   width: string;
 }
 
-const Bar = ({ width }: BarProps) => {
+const Bar = ({ bgColor, width }: BarProps) => {
   return (
     <section
-      className={styles.BarContainer}
-      style={{ width: width, backgroundColor: '#5448A1', height: '25px' }}
+      className={
+        bgColor === '#5448A1' || bgColor === '#5448a1'
+          ? styles.BarContainer
+          : styles.BarContainerWhite
+      }
+      style={{ width: width, backgroundColor: bgColor, height: '25px' }}
     ></section>
   );
 };
