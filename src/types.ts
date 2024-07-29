@@ -3,9 +3,8 @@ export enum Path {
   ABOUT_ME = '/about_me',
   MY_WORK = '/work',
   CONTACT = '/contact',
-  COMPANY_PROJECTS = '/work/company',
-  FREELANCE_PROJECTS = '/work/freelance',
-  SIDE_PROJECTS = '/work/side',
+  MOBILE_PROJECT_LIST = '/project_list',
+  DESKTOP_PROJECT_LIST = '/work/project_list',
 }
 
 export enum ProjectTypes {
@@ -18,5 +17,4 @@ export interface IProjectType {
   type: string;
   copy: string;
   image: string;
-  path: string;
 }

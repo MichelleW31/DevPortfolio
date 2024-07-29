@@ -16,19 +16,16 @@ const MyWork = () => {
       type: ProjectTypes.COMPANY,
       copy: ProjectTypes.COMPANY,
       image: '',
-      path: Path.COMPANY_PROJECTS,
     },
     {
       type: ProjectTypes.FREELANCE,
       copy: ProjectTypes.FREELANCE,
       image: '',
-      path: Path.FREELANCE_PROJECTS,
     },
     {
       type: ProjectTypes.SIDE,
       copy: ProjectTypes.SIDE,
       image: '',
-      path: Path.SIDE_PROJECTS,
     },
   ];
 
@@ -36,7 +33,6 @@ const MyWork = () => {
     <ProjectPreview
       copy={projectType.copy}
       image={projectType.image}
-      path={projectType.copy}
       key={projectType.copy}
     />
   ));

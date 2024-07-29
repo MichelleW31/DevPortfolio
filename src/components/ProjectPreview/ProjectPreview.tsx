@@ -8,15 +8,13 @@ import styles from './ProjectPreview.module.scss';
 interface ProjectPreviewProps {
   copy: string;
   image: string;
-  path: string;
 }
 
-const ProjectPreview = ({ copy, image, path }: ProjectPreviewProps) => {
+const ProjectPreview = ({ copy, image }: ProjectPreviewProps) => {
   const navigate = useNavigate();
 
   const projectClick = () => {
-    navigate(path);
-    console.log('click');
+    navigate(Path.MOBILE_PROJECT_LIST);
   };
 
   return (
