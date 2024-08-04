@@ -1,0 +1,16 @@
+@import '../../variables/_variables.scss';
+
+.BackButtonContainer {
+  align-items: center;
+  background-color: $lightPurple;
+  display: flex;
+  font-family: 'Inter-SemiBold';
+  justify-content: center;
+  padding: 10px;
+
+  a {
+    color: $midPurple;
+    font-size: 18px;
+    padding-left: 10px;
+  }
+}

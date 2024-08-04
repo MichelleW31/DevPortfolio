@@ -1,5 +1,6 @@
 export enum Path {
   ROOT = '/',
+  ABOUT_SECTION = '/#aboutSection',
   ABOUT_ME = '/about_me',
   MY_WORK = '/work',
   CONTACT = '/contact',
