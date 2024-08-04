@@ -3,6 +3,9 @@ import { useNavigate } from 'react-router-dom';
 
 // CUSTOM MODULES
 import { Path } from '../../types';
+import { isDesktop } from '../../utilities/responsiveness';
+import useWindowSize from '../../hooks/windowSize';
+import { capitalizeFirstLetter } from '../../utilities/formatting';
 import styles from './ProjectPreview.module.scss';
 
 interface ProjectPreviewProps {
@@ -11,18 +14,24 @@ interface ProjectPreviewProps {
 }
 
 const ProjectPreview = ({ copy, image }: ProjectPreviewProps) => {
+  const windowSize = useWindowSize();
+
   const navigate = useNavigate();
 
   const projectClick = () => {
-    navigate(Path.MOBILE_PROJECT_LIST);
+    if (!isDesktop(windowSize)) {
+      navigate(Path.MOBILE_PROJECT_LIST, { state: { projectType: copy } });
+    }
   };
+
+  const projectName = capitalizeFirstLetter(copy);
 
   return (
     <section
       className={styles.ProjectPreviewContainer}
       onClick={() => projectClick()}
     >
-      <p>{copy} Projects</p>
+      <p>{projectName} Projects</p>
       <section className={styles.ProjectPreviewImage}></section>
     </section>
   );

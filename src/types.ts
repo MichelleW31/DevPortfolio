@@ -9,13 +9,22 @@ export enum Path {
 }
 
 export enum ProjectTypes {
-  COMPANY = 'Company',
-  FREELANCE = 'Freelance',
-  SIDE = 'Side',
+  COMPANY = 'company',
+  FREELANCE = 'freelance',
+  SIDE = 'side',
 }
 
 export interface IProjectType {
   type: string;
   copy: string;
   image: string;
+}
+
+export interface IProject {
+  name: string;
+  tecnologies: string;
+  overview: string;
+  live_link?: string;
+  github_link?: string;
+  images: string;
 }

@@ -1,0 +1,60 @@
+{
+  "company": [
+    {
+      "name": "AARP",
+      "tecnologies": ["React", "Typescript", "NodeJS"],
+      "overview": "",
+      "live_link": "",
+      "images": ""
+    },
+    {
+      "name": "Driveway",
+      "tecnologies": ["React", "Typescript", "NodeJS"],
+      "overview": "",
+      "live_link": "",
+      "images": ""
+    },
+    {
+      "name": "Dominos",
+      "tecnologies": ["React", "Typescript", "NodeJS"],
+      "overview": "",
+      "live_link": "",
+      "images": ""
+    }
+  ],
+  "freelance": [
+    {
+      "name": "TripSlip",
+      "tecnologies": ["React Native", "Typescript", "NodeJS"],
+      "overview": "",
+      "live_link": "",
+      "images": ""
+    }
+  ],
+  "side": [
+    {
+      "name": "MoDrip",
+      "tecnologies": ["React Native", "Typescript", "NodeJS"],
+      "overview": "",
+      "github_link": "",
+      "live_link": "",
+      "images": ""
+    },
+    {
+      "name": "Foodio",
+      "tecnologies": ["React", "Typescript", "NodeJS"],
+      "overview": "",
+      "github_link": "",
+      "live_link": "",
+      "images": ""
+    },
+    {
+      "name": "BGM Bank",
+      "tecnologies": ["React", "Typescript", "NodeJS"],
+      "overview": "",
+      "github_link": "",
+      "live_link": "",
+      "images": ""
+    }
+  ]
+}
