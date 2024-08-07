@@ -9,6 +9,7 @@ import Contact from './Contact/Contact';
 import ProjectList from './ProjectList/ProjectList';
 import { isDesktop } from '../utilities/responsiveness';
 import useWindowSize from '../hooks/windowSize';
+import ProjectDetails from './ProjectDetails/ProjectDetails';
 
 const AppRoutes = () => {
   const windowSize = useWindowSize();
@@ -36,6 +37,7 @@ const AppRoutes = () => {
             }
           />
           <Route path={Path.MOBILE_PROJECT_LIST} element={<ProjectList />} />
+          <Route path={Path.PROJECT_DETAILS} element={<ProjectDetails />} />
         </>
       )}
     </Routes>

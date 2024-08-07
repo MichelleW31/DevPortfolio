@@ -21,23 +21,24 @@ const MyWork = () => {
   const projectTypes = [
     {
       type: ProjectTypes.COMPANY,
-      copy: ProjectTypes.COMPANY,
+      copy: `${ProjectTypes.COMPANY} Projects`,
       image: '',
     },
     {
       type: ProjectTypes.FREELANCE,
-      copy: ProjectTypes.FREELANCE,
+      copy: `${ProjectTypes.FREELANCE} Projects`,
       image: '',
     },
     {
       type: ProjectTypes.SIDE,
-      copy: ProjectTypes.SIDE,
+      copy: `${ProjectTypes.SIDE} Projects`,
       image: '',
     },
   ];
 
   const projectView = projectTypes.map((projectType: IProjectType) => (
     <ProjectPreview
+      type={projectType.type}
       copy={projectType.copy}
       image={projectType.image}
       key={projectType.copy}

@@ -7,9 +7,10 @@ import { IProject, Path } from '../../types';
 import { isDesktop } from '../../utilities/responsiveness';
 import useWindowSize from '../../hooks/windowSize';
 import Bar from '../../components/Bar/Bar';
-import projectData from '../../utilities/projectData.json';
+import projectData from '../../utilities/projects.json';
 import { capitalizeFirstLetter } from '../../utilities/formatting';
 import styles from './ProjectList.module.scss';
+import ProjectPreview from '../../components/ProjectPreview/ProjectPreview';
 
 const ProjectList = () => {
   const location = useLocation();
@@ -17,6 +18,17 @@ const ProjectList = () => {
   const projectType: string = location.state.projectType;
 
   const projects: IProject[] = projectData[projectType];
+
+  const projectListView = projects.map((project) => {
+    return (
+      <ProjectPreview
+        copy={project.name}
+        image={project.images}
+        key={project.name}
+        project={project}
+      />
+    );
+  });
 
   return (
     <section className={styles.ProjectListContainer}>
@@ -29,6 +41,8 @@ const ProjectList = () => {
       </section>
 
       <Bar bgColor="#fff" width={isDesktop(windowSize) ? '45%' : '75%'} />
+
+      <section className={styles.ProjectListView}>{projectListView}</section>
     </section>
   );
 };

@@ -2,4 +2,31 @@
 
 .ProjectListContainer {
   background-color: $darkPurple;
+
+  .NameCopyContainer {
+    margin-top: 40px;
+  }
+
+  .TitleCopy {
+    color: #fff;
+    font-size: 30px;
+    padding: 0px 35px 0px;
+
+    @media (min-width: $desktopWidth) {
+      color: $darkPurple;
+    }
+  }
+
+  .ProjectListView {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 35px 0px;
+    flex-wrap: wrap;
+    row-gap: 50px;
+
+    @media (min-width: $desktopWidth) {
+      width: 30%;
+    }
+  }
 }
