@@ -1,0 +1,3 @@
+// PROJECTS
+export const SET_PROJECT_TYPE = 'SET_PROJECT_TYPE';
+export const SET_PROJECT = 'SET_PROJECT';

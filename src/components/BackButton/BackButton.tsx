@@ -7,7 +7,7 @@ import BackButtonArrow from '../BackButtonArrow/BackButtonArrow';
 
 interface BackButtonProps {
   copy: string;
-  path: string;
+  path: any;
 }
 
 const BackButton = ({ copy, path }: BackButtonProps) => {

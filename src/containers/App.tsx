@@ -1,18 +1,24 @@
 // BASE MODULES
 import { BrowserRouter as Router } from 'react-router-dom';
+import { Provider } from 'react-redux';
 
 // CUSTOM MODULES
 import './App.css';
 import Header from '../components/Header/Header';
 import AppRoutes from './Routes';
+import configureStore from '../store/store';
 
 function App() {
-  return (
-    <Router>
-      <Header />
+  const store = configureStore();
 
-      <AppRoutes />
-    </Router>
+  return (
+    <Provider store={store}>
+      <Router>
+        <Header />
+
+        <AppRoutes />
+      </Router>
+    </Provider>
   );
 }
 

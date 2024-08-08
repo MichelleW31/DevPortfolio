@@ -12,9 +12,12 @@ import { capitalizeFirstLetter } from '../../utilities/formatting';
 import styles from './ProjectList.module.scss';
 import ProjectPreview from '../../components/ProjectPreview/ProjectPreview';
 
+// Pull in project type here from redux store
+
 const ProjectList = () => {
   const location = useLocation();
   const windowSize = useWindowSize();
+  // will no longer need this. Will project type in the store
   const projectType: string = location.state.projectType;
 
   const projects: IProject[] = projectData[projectType];
