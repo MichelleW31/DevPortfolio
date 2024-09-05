@@ -28,7 +28,12 @@ export interface IProject {
   overview: string;
   live_link?: string;
   github_link?: string;
-  images: string[];
+  images: IImage[];
+}
+
+export interface IImage {
+  original: string;
+  thumbnail: string;
 }
 
 export interface IState {

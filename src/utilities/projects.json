@@ -6,7 +6,7 @@
       "technologies": ["React", "Typescript", "NodeJS"],
       "overview": "AARP Overview",
       "live_link": "https://www.aarp.org/rewards/",
-      "images": ""
+      "images": [{ "original": "", "thumbnail": "" }]
     },
     {
       "name": "Driveway",
@@ -14,7 +14,7 @@
       "technologies": ["React", "Typescript", "NodeJS"],
       "overview": "Driveway Overview",
       "live_link": "https://www.driveway.com/sell-your-car",
-      "images": ""
+      "images": [{ "original": "", "thumbnail": "" }]
     },
     {
       "name": "Dominos",
@@ -22,7 +22,7 @@
       "technologies": ["React", "Typescript", "NodeJS"],
       "overview": "Dominos Overview",
       "live_link": "https://www.dominos.com/",
-      "images": ""
+      "images": [{ "original": "", "thumbnail": "" }]
     }
   ],
   "freelance": [
@@ -32,7 +32,7 @@
       "technologies": ["React Native", "Typescript", "NodeJS"],
       "overview": "TripSlip Overview",
       "live_link": "https://apps.apple.com/in/app/tripslip/id6466344424",
-      "images": ""
+      "images": [{ "original": "", "thumbnail": "" }]
     }
   ],
   "side": [
@@ -43,7 +43,7 @@
       "overview": "MoDrip Overview",
       "github_link": "",
       "live_link": "",
-      "images": ""
+      "images": [{ "original": "", "thumbnail": "" }]
     },
     {
       "name": "Foodio",
@@ -52,7 +52,16 @@
       "overview": "Foodio Overview",
       "github_link": "https://github.com/MichelleW31/Foodio",
       "live_link": "michellew31.github.io/Foodio/",
-      "images": ""
+      "images": [
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        }
+      ]
     },
     {
       "name": "BGM Bank",
@@ -61,7 +70,7 @@
       "overview": "BGM Bank Overview",
       "github_link": "https://github.com/MichelleW31/BGM_FE",
       "live_link": "michellew31.github.io/BGM_FE/",
-      "images": ""
+      "images": [{ "original": "", "thumbnail": "" }]
     }
   ]
 }

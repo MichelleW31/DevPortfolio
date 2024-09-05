@@ -1,17 +1,45 @@
+@import '../../variables/_variables.scss';
+
 .ProductDetailsContainer {
   .NameCopyContainer {
+    margin-top: 40px;
+
     .TitleCopy {
+      color: #fff;
+      font-size: 30px;
+      padding: 0px 35px 0px;
+
+      @media (min-width: $desktopWidth) {
+        color: $darkPurple;
+      }
     }
   }
 
   .TechnologyContainer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 140px;
+    margin: 40px 0 45px;
+    padding: 0 35px;
   }
 
   .OverviewContainer {
+    padding: 0 35px;
+
     .OverviewTitle {
+      font-family: 'Inter-Medium';
+      margin-bottom: 15px;
+    }
+
+    .OverviewCopy {
+      font-family: 'Inter-Regular';
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .LinkCopy {
+      font-family: 'Inter-Medium';
+      font-size: 14px;
     }
   }
 }
