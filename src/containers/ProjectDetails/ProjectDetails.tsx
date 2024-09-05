@@ -1,5 +1,6 @@
 // BASE MODULES
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 // CUSTOM MODULES
 import BackButton from '../../components/BackButton/BackButton';
@@ -43,6 +44,17 @@ const ProjectDetails = ({ project }: ProjectProps) => {
       <section className={styles.OverviewContainer}>
         <h3 className={styles.OverviewTitle}>Overview</h3>
         <p className={styles.OverviewCopy}>{project.overview}</p>
+        {project.github_link && (
+          <p>
+            Github Link:{' '}
+            <Link to={project.github_link}>{project.github_link}</Link>
+          </p>
+        )}
+        {project.live_link && (
+          <p>
+            Live Link: <Link to={project.live_link}>{project.live_link}</Link>
+          </p>
+        )}
       </section>
     </section>
   );

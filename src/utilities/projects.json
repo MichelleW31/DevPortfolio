@@ -5,7 +5,7 @@
       "projectType": "company",
       "technologies": ["React", "Typescript", "NodeJS"],
       "overview": "AARP Overview",
-      "live_link": "",
+      "live_link": "https://www.aarp.org/rewards/",
       "images": ""
     },
     {
@@ -13,7 +13,7 @@
       "projectType": "company",
       "technologies": ["React", "Typescript", "NodeJS"],
       "overview": "Driveway Overview",
-      "live_link": "",
+      "live_link": "https://www.driveway.com/sell-your-car",
       "images": ""
     },
     {
@@ -21,7 +21,7 @@
       "projectType": "company",
       "technologies": ["React", "Typescript", "NodeJS"],
       "overview": "Dominos Overview",
-      "live_link": "",
+      "live_link": "https://www.dominos.com/",
       "images": ""
     }
   ],
@@ -31,7 +31,7 @@
       "projectType": "freelance",
       "technologies": ["React Native", "Typescript", "NodeJS"],
       "overview": "TripSlip Overview",
-      "live_link": "",
+      "live_link": "https://apps.apple.com/in/app/tripslip/id6466344424",
       "images": ""
     }
   ],
@@ -50,8 +50,8 @@
       "projectType": "side",
       "technologies": ["React", "Typescript", "NodeJS"],
       "overview": "Foodio Overview",
-      "github_link": "",
-      "live_link": "",
+      "github_link": "https://github.com/MichelleW31/Foodio",
+      "live_link": "michellew31.github.io/Foodio/",
       "images": ""
     },
     {
@@ -59,8 +59,8 @@
       "projectType": "side",
       "technologies": ["React", "Typescript", "NodeJS"],
       "overview": "BGM Bank Overview",
-      "github_link": "",
-      "live_link": "",
+      "github_link": "https://github.com/MichelleW31/BGM_FE",
+      "live_link": "michellew31.github.io/BGM_FE/",
       "images": ""
     }
   ]
