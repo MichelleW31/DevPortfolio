@@ -1,0 +1,11 @@
+@import '../../variables/_variables.scss';
+
+.TechnologyIconContainer {
+  background-color: $midPurple;
+  border-radius: 3px;
+  display: flex;
+  font-family: 'Inter-Medium';
+  font-size: 13px;
+  justify-content: center;
+  width: 30%;
+}

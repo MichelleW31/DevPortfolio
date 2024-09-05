@@ -1,57 +1,74 @@
 // BASE MODULES
 import { useNavigate } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 // CUSTOM MODULES
-import { IProject, Path } from '../../types';
+import { IProject, IProjectType, IState, Path } from '../../types';
 import { isDesktop } from '../../utilities/responsiveness';
 import useWindowSize from '../../hooks/windowSize';
 import { capitalizeFirstLetter } from '../../utilities/formatting';
+import { setProject, setProjectType } from '../../store/actions/projectActions';
 import styles from './ProjectPreview.module.scss';
 
 interface ProjectPreviewProps {
-  type?: string;
-  copy: string;
-  image: string;
-  project: IProject;
+  projectType?: IProjectType;
+  project?: IProject;
+  setProjectType: any;
+  setProject: any;
 }
 
 const ProjectPreview = ({
-  copy,
-  image,
-  type,
+  projectType,
   project,
+  setProjectType,
+  setProject,
 }: ProjectPreviewProps) => {
   const windowSize = useWindowSize();
 
   const navigate = useNavigate();
 
-  // If on project type component, then set the project type when a project type is clicked on
-  // If on project component, then set the project when a project is clicked on
-  // How to deter mine if it project type or project preview. Some type of flag or prop?
   const projectClick = () => {
     if (!isDesktop(windowSize)) {
-      if (type) {
-        // will no longer need to send as location state. Will project type in the store
-        navigate(Path.MOBILE_PROJECT_LIST, { state: { projectType: type } });
-      } else {
-        navigate(Path.PROJECT_DETAILS, {
-          state: { project: project },
-        });
+      if (projectType) {
+        setProjectType(projectType);
+        navigate(Path.MOBILE_PROJECT_LIST);
+      } else if (project) {
+        setProject(project);
+        navigate(Path.PROJECT_DETAILS);
       }
     }
   };
 
-  const projectName = capitalizeFirstLetter(copy);
+  const previewName = projectType
+    ? capitalizeFirstLetter(projectType.name)
+    : capitalizeFirstLetter(project.name);
 
   return (
     <section
       className={styles.ProjectPreviewContainer}
       onClick={() => projectClick()}
     >
-      <p>{projectName}</p>
+      <p>{previewName}</p>
       <section className={styles.ProjectPreviewImage}></section>
     </section>
   );
 };
 
-export default ProjectPreview;
+const mapStateToProps = (state: IState) => {
+  return {
+    // project: state.project.project,
+  };
+};
+
+const mapDispatchToProps = (dispatch: any) => {
+  return {
+    setProjectType: (projectType: IProjectType) => {
+      dispatch(setProjectType(projectType));
+    },
+    setProject: (project: IProject) => {
+      dispatch(setProject(project));
+    },
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(ProjectPreview);

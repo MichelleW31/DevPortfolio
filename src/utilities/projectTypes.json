@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "name": "Company Projects",
+      "type": "company",
+      "image": ""
+    },
+    {
+      "name": "Freelance Projects",
+      "type": "freelance",
+      "image": ""
+    },
+    {
+      "name": "Side Projects",
+      "type": "side",
+      "image": ""
+    }
+  ]
+}

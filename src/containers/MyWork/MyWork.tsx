@@ -5,8 +5,9 @@ import { useEffect, useRef } from 'react';
 import Bar from '../../components/Bar/Bar';
 import { isDesktop } from '../../utilities/responsiveness';
 import useWindowSize from '../../hooks/windowSize';
-import { IProjectType, Path, ProjectTypes } from '../../types';
+import { IProjectType } from '../../types';
 import ProjectPreview from '../../components/ProjectPreview/ProjectPreview';
+import projectTypes from '../../utilities/projectTypes.json';
 import styles from './MyWork.module.scss';
 
 const MyWork = () => {
@@ -18,32 +19,9 @@ const MyWork = () => {
     myWorkContainer.current.scrollIntoView({ behavior: 'smooth' });
   });
 
-  const projectTypes = [
-    {
-      type: ProjectTypes.COMPANY,
-      copy: `${ProjectTypes.COMPANY} Projects`,
-      image: '',
-    },
-    {
-      type: ProjectTypes.FREELANCE,
-      copy: `${ProjectTypes.FREELANCE} Projects`,
-      image: '',
-    },
-    {
-      type: ProjectTypes.SIDE,
-      copy: `${ProjectTypes.SIDE} Projects`,
-      image: '',
-    },
-  ];
-
-  const projectView = projectTypes.map((projectType: IProjectType) => (
-    <ProjectPreview
-      type={projectType.type}
-      copy={projectType.copy}
-      image={projectType.image}
-      key={projectType.copy}
-    />
-  ));
+  const projectView = projectTypes.data.map((projectType: IProjectType) => {
+    return <ProjectPreview projectType={projectType} key={projectType.name} />;
+  });
 
   return (
     <section className={styles.MyWorkContainer} ref={myWorkContainer}>

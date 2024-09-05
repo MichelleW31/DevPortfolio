@@ -1,7 +1,11 @@
 import { SET_PROJECT, SET_PROJECT_TYPE } from '../actions/actionTypes';
 
 const initialState = {
-  projectType: '',
+  projectType: {
+    name: '',
+    type: '',
+    image: '',
+  },
   project: {
     name: '',
     projectType: '',

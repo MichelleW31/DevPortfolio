@@ -1,7 +1,7 @@
-import { IProject } from '../../types';
+import { IProject, IProjectType } from '../../types';
 import { SET_PROJECT, SET_PROJECT_TYPE } from './actionTypes';
 
-export const setProjectType = (projectType: string) => {
+export const setProjectType = (projectType: IProjectType) => {
   return {
     type: SET_PROJECT_TYPE,
     payload: projectType,

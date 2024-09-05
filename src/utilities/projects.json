@@ -3,24 +3,24 @@
     {
       "name": "AARP",
       "projectType": "company",
-      "tecnologies": ["React", "Typescript", "NodeJS"],
-      "overview": "",
+      "technologies": ["React", "Typescript", "NodeJS"],
+      "overview": "AARP Overview",
       "live_link": "",
       "images": ""
     },
     {
       "name": "Driveway",
       "projectType": "company",
-      "tecnologies": ["React", "Typescript", "NodeJS"],
-      "overview": "",
+      "technologies": ["React", "Typescript", "NodeJS"],
+      "overview": "Driveway Overview",
       "live_link": "",
       "images": ""
     },
     {
       "name": "Dominos",
       "projectType": "company",
-      "tecnologies": ["React", "Typescript", "NodeJS"],
-      "overview": "",
+      "technologies": ["React", "Typescript", "NodeJS"],
+      "overview": "Dominos Overview",
       "live_link": "",
       "images": ""
     }
@@ -29,8 +29,8 @@
     {
       "name": "TripSlip",
       "projectType": "freelance",
-      "tecnologies": ["React Native", "Typescript", "NodeJS"],
-      "overview": "",
+      "technologies": ["React Native", "Typescript", "NodeJS"],
+      "overview": "TripSlip Overview",
       "live_link": "",
       "images": ""
     }
@@ -39,8 +39,8 @@
     {
       "name": "MoDrip",
       "projectType": "side",
-      "tecnologies": ["React Native", "Typescript", "NodeJS"],
-      "overview": "",
+      "technologies": ["React Native", "Typescript", "NodeJS"],
+      "overview": "MoDrip Overview",
       "github_link": "",
       "live_link": "",
       "images": ""
@@ -48,8 +48,8 @@
     {
       "name": "Foodio",
       "projectType": "side",
-      "tecnologies": ["React", "Typescript", "NodeJS"],
-      "overview": "",
+      "technologies": ["React", "Typescript", "NodeJS"],
+      "overview": "Foodio Overview",
       "github_link": "",
       "live_link": "",
       "images": ""
@@ -57,8 +57,8 @@
     {
       "name": "BGM Bank",
       "projectType": "side",
-      "tecnologies": ["React", "Typescript", "NodeJS"],
-      "overview": "",
+      "technologies": ["React", "Typescript", "NodeJS"],
+      "overview": "BGM Bank Overview",
       "github_link": "",
       "live_link": "",
       "images": ""

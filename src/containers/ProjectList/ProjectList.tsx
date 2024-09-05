@@ -1,9 +1,9 @@
 // BASE MODULES
-import { useLocation } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 // CUSTOM MODULES
 import BackButton from '../../components/BackButton/BackButton';
-import { IProject, Path } from '../../types';
+import { IProject, IProjectType, IState, Path } from '../../types';
 import { isDesktop } from '../../utilities/responsiveness';
 import useWindowSize from '../../hooks/windowSize';
 import Bar from '../../components/Bar/Bar';
@@ -12,25 +12,17 @@ import { capitalizeFirstLetter } from '../../utilities/formatting';
 import styles from './ProjectList.module.scss';
 import ProjectPreview from '../../components/ProjectPreview/ProjectPreview';
 
-// Pull in project type here from redux store
+interface ProjectListProps {
+  projectType: IProjectType;
+}
 
-const ProjectList = () => {
-  const location = useLocation();
+const ProjectList = ({ projectType }: ProjectListProps) => {
   const windowSize = useWindowSize();
-  // will no longer need this. Will project type in the store
-  const projectType: string = location.state.projectType;
 
-  const projects: IProject[] = projectData[projectType];
+  const projects: IProject[] = projectData[projectType.type];
 
   const projectListView = projects.map((project) => {
-    return (
-      <ProjectPreview
-        copy={project.name}
-        image={project.images}
-        key={project.name}
-        project={project}
-      />
-    );
+    return <ProjectPreview project={project} key={project.name} />;
   });
 
   return (
@@ -39,7 +31,7 @@ const ProjectList = () => {
 
       <section className={styles.NameCopyContainer}>
         <h2 className={styles.TitleCopy}>
-          {capitalizeFirstLetter(projectType)} Projects
+          {capitalizeFirstLetter(projectType.type)} Projects
         </h2>
       </section>
 
@@ -50,4 +42,10 @@ const ProjectList = () => {
   );
 };
 
-export default ProjectList;
+const mapStateToProps = (state: IState) => {
+  return {
+    projectType: state.project.projectType,
+  };
+};
+
+export default connect(mapStateToProps)(ProjectList);

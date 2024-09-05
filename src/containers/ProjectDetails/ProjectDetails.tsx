@@ -1,31 +1,57 @@
 // BASE MODULES
-import { useLocation, useNavigate } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 // CUSTOM MODULES
 import BackButton from '../../components/BackButton/BackButton';
-import { Path } from '../../types';
+import { IProject, IState, Path } from '../../types';
 import { capitalizeFirstLetter } from '../../utilities/formatting';
+import { isDesktop } from '../../utilities/responsiveness';
+import useWindowSize from '../../hooks/windowSize';
+import Bar from '../../components/Bar/Bar';
+import TechnologyIcon from '../../components/TechnologyIcon/TechnologyIcon';
 import styles from './ProjectDetails.module.scss';
 
-// Pull in project here from redux store
+interface ProjectProps {
+  project: IProject;
+}
 
-const ProjectDetails = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
-
-  // will no longer need this. Will project type in the store
-  const project = location.state.project;
-
+const ProjectDetails = ({ project }: ProjectProps) => {
+  const windowSize = useWindowSize();
   const backButtonTitle = capitalizeFirstLetter(project.projectType);
 
+  const techIcons = project.technologies.map((technology) => (
+    <TechnologyIcon techName={technology} key={technology} />
+  ));
+
   return (
-    <section>
+    <section className={styles.ProductDetailsContainer}>
       <BackButton
         copy={`Back to ${backButtonTitle} Projects`}
-        path={(Path.MOBILE_PROJECT_LIST, { state: { projectType: 'company' } })}
+        path={Path.MOBILE_PROJECT_LIST}
       />
+
+      <section className={styles.NameCopyContainer}>
+        <h2 className={styles.TitleCopy}>
+          {capitalizeFirstLetter(project.name)}
+        </h2>
+      </section>
+
+      <Bar bgColor="#fff" width={isDesktop(windowSize) ? '45%' : '75%'} />
+
+      <section className={styles.TechnologyContainer}>{techIcons}</section>
+
+      <section className={styles.OverviewContainer}>
+        <h3 className={styles.OverviewTitle}>Overview</h3>
+        <p className={styles.OverviewCopy}>{project.overview}</p>
+      </section>
     </section>
   );
 };
 
-export default ProjectDetails;
+const mapStateToProps = (state: IState) => {
+  return {
+    project: state.project.project,
+  };
+};
+
+export default connect(mapStateToProps)(ProjectDetails);

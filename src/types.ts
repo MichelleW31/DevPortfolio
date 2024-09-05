@@ -5,7 +5,7 @@ export enum Path {
   MY_WORK = '/work',
   CONTACT = '/contact',
   MOBILE_PROJECT_LIST = '/project_list',
-  DESKTOP_PROJECT_LIST = '/work/project_list',
+  // DESKTOP_PROJECT_LIST = '/work/project_list',
   PROJECT_DETAILS = '/project_list/project_details',
 }
 
@@ -16,17 +16,24 @@ export enum ProjectTypes {
 }
 
 export interface IProjectType {
+  name: string;
   type: string;
-  copy: string;
   image: string;
 }
 
 export interface IProject {
   name: string;
   projectType: string;
-  tecnologies: string;
+  technologies: string[];
   overview: string;
   live_link?: string;
   github_link?: string;
   images: string[];
+}
+
+export interface IState {
+  project: {
+    projectType: IProjectType;
+    project: IProject;
+  };
 }
