@@ -5,7 +5,7 @@ export enum Path {
   MY_WORK = '/work',
   CONTACT = '/contact',
   MOBILE_PROJECT_LIST = '/project_list',
-  // DESKTOP_PROJECT_LIST = '/work/project_list',
+  DESKTOP_PROJECT_LIST = '/work/project_list',
   PROJECT_DETAILS = '/project_list/project_details',
 }
 

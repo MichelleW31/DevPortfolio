@@ -3,8 +3,25 @@
 .ProjectListContainer {
   background-color: $darkPurple;
 
+  @media (min-width: $desktopWidth) {
+    background-color: transparent;
+    padding-top: 40px;
+  }
+
+  .BackLink {
+    padding: 0 35px;
+  }
+
+  .BackLinkCopy {
+    margin-left: 5px;
+  }
+
   .NameCopyContainer {
     margin-top: 40px;
+
+    @media (min-width: $desktopWidth) {
+      margin-top: 10px;
+    }
   }
 
   .TitleCopy {
@@ -26,6 +43,7 @@
     row-gap: 50px;
 
     @media (min-width: $desktopWidth) {
+      padding: 55px 35px 0px;
       width: 30%;
     }
   }

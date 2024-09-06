@@ -36,6 +36,14 @@ const ProjectPreview = ({
         setProject(project);
         navigate(Path.PROJECT_DETAILS);
       }
+    } else {
+      if (projectType) {
+        setProjectType(projectType);
+        navigate(Path.DESKTOP_PROJECT_LIST);
+      } else if (project) {
+        setProject(project);
+        navigate(Path.PROJECT_DETAILS);
+      }
     }
   };
 

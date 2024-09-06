@@ -11,6 +11,8 @@ import projectData from '../../utilities/projects.json';
 import { capitalizeFirstLetter } from '../../utilities/formatting';
 import styles from './ProjectList.module.scss';
 import ProjectPreview from '../../components/ProjectPreview/ProjectPreview';
+import { Link } from 'react-router-dom';
+import BackButtonArrow from '../../components/BackButtonArrow/BackButtonArrow';
 
 interface ProjectListProps {
   projectType: IProjectType;
@@ -27,7 +29,16 @@ const ProjectList = ({ projectType }: ProjectListProps) => {
 
   return (
     <section className={styles.ProjectListContainer}>
-      <BackButton copy="Back to My Work" path={Path.ROOT} />
+      {!isDesktop(windowSize) ? (
+        <BackButton copy="Back to My Work" path={Path.ROOT} />
+      ) : (
+        <>
+          <Link className={styles.BackLink} to={Path.MY_WORK}>
+            <BackButtonArrow />
+            <span className={styles.BackLinkCopy}>Back to My Work</span>
+          </Link>
+        </>
+      )}
 
       <section className={styles.NameCopyContainer}>
         <h2 className={styles.TitleCopy}>
@@ -35,7 +46,10 @@ const ProjectList = ({ projectType }: ProjectListProps) => {
         </h2>
       </section>
 
-      <Bar bgColor="#fff" width={isDesktop(windowSize) ? '45%' : '75%'} />
+      <Bar
+        bgColor={isDesktop(windowSize) ? '#5448a1' : '#fff'}
+        width={isDesktop(windowSize) ? '45%' : '75%'}
+      />
 
       <section className={styles.ProjectListView}>{projectListView}</section>
     </section>
