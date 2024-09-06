@@ -6,7 +6,24 @@
       "technologies": ["React", "Typescript", "NodeJS"],
       "overview": "AARP Overview",
       "live_link": "https://www.aarp.org/rewards/",
-      "images": [{ "original": "", "thumbnail": "" }]
+      "images": [
+        {
+          "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/AARP/AARP_1.png?raw=true",
+          "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/AARP/AARP_1.png?raw=true"
+        },
+        {
+          "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/AARP/AARP_2.png?raw=true",
+          "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/AARP/AARP_2.png?raw=true"
+        },
+        {
+          "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/AARP/AARP_3.png?raw=true",
+          "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/AARP/AARP_3.png?raw=true"
+        },
+        {
+          "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/AARP/AARP_4.png?raw=true",
+          "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/AARP/AARP_4.png?raw=true"
+        }
+      ]
     },
     {
       "name": "Driveway",
@@ -14,7 +31,28 @@
       "technologies": ["React", "Typescript", "NodeJS"],
       "overview": "Driveway Overview",
       "live_link": "https://www.driveway.com/sell-your-car",
-      "images": [{ "original": "", "thumbnail": "" }]
+      "images": [
+        {
+          "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Driveway/DW_1.png?raw=true",
+          "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Driveway/DW_1.png?raw=true"
+        },
+        {
+          "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Driveway/DW_2.png?raw=true",
+          "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Driveway/DW_2.png?raw=true"
+        },
+        {
+          "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Driveway/DW_3.png?raw=true",
+          "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Driveway/DW_3.png?raw=true"
+        },
+        {
+          "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Driveway/DW_4.png?raw=true",
+          "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Driveway/DW_4.png?raw=true"
+        },
+        {
+          "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Driveway/DW_5.png?raw=true",
+          "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Driveway/DW_5.png?raw=true"
+        }
+      ]
     },
     {
       "name": "Dominos",
@@ -22,7 +60,24 @@
       "technologies": ["React", "Typescript", "NodeJS"],
       "overview": "Dominos Overview",
       "live_link": "https://www.dominos.com/",
-      "images": [{ "original": "", "thumbnail": "" }]
+      "images": [
+        {
+          "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Dominos/DOM_1.png?raw=true",
+          "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Dominos/DOM_1.png?raw=true"
+        },
+        {
+          "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Dominos/DOM_2.png?raw=true",
+          "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Dominos/DOM_2.png?raw=true"
+        },
+        {
+          "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Dominos/DOM_3.png?raw=true",
+          "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Dominos/DOM_3.png?raw=true"
+        },
+        {
+          "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Dominos/DOM_4.png?raw=true",
+          "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Dominos/DOM_4.png?raw=true"
+        }
+      ]
     }
   ],
   "freelance": [
@@ -32,7 +87,40 @@
       "technologies": ["React Native", "Typescript", "NodeJS"],
       "overview": "TripSlip Overview",
       "live_link": "https://apps.apple.com/in/app/tripslip/id6466344424",
-      "images": [{ "original": "", "thumbnail": "" }]
+      "images": [
+        {
+          "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/TripSlip/TS_1.png?raw=true",
+          "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/TripSlip/TS_1.png?raw=true"
+        },
+        {
+          "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/TripSlip/TS_2.png?raw=true",
+          "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/TripSlip/TS_2.png?raw=true"
+        },
+        {
+          "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/TripSlip/TS_3.png?raw=true",
+          "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/TripSlip/TS_3.png?raw=true"
+        },
+        {
+          "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/TripSlip/TS_4.png?raw=true",
+          "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/TripSlip/TS_4.png?raw=true"
+        },
+        {
+          "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/TripSlip/TS_5.png?raw=true",
+          "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/TripSlip/TS_5.png?raw=true"
+        },
+        {
+          "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/TripSlip/TS_6.png?raw=true",
+          "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/TripSlip/TS_6.png?raw=true"
+        },
+        {
+          "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/TripSlip/TS_7.png?raw=true",
+          "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/TripSlip/TS_7.png?raw=true"
+        },
+        {
+          "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/TripSlip/TS_8.png?raw=true",
+          "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/TripSlip/TS_8.png?raw=true"
+        }
+      ]
     }
   ],
   "side": [
