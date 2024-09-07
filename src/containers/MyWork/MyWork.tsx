@@ -19,7 +19,7 @@ const MyWork = () => {
     myWorkContainer.current.scrollIntoView({ behavior: 'smooth' });
   });
 
-  const projectView = projectTypes.data.map((projectType: IProjectType) => {
+  const projectTypeView = projectTypes.data.map((projectType: IProjectType) => {
     return <ProjectPreview projectType={projectType} key={projectType.name} />;
   });
 
@@ -31,7 +31,7 @@ const MyWork = () => {
         width={isDesktop(windowSize) ? '45%' : '75%'}
       />
 
-      <section className={styles.ProjectsContainer}>{projectView}</section>
+      <section className={styles.ProjectsContainer}>{projectTypeView}</section>
     </section>
   );
 };

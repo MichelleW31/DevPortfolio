@@ -15,6 +15,7 @@ interface ProjectPreviewProps {
   project?: IProject;
   setProjectType: any;
   setProject: any;
+  setDesktopShowProjectDetails: any;
 }
 
 const ProjectPreview = ({
@@ -22,6 +23,7 @@ const ProjectPreview = ({
   project,
   setProjectType,
   setProject,
+  setDesktopShowProjectDetails,
 }: ProjectPreviewProps) => {
   const windowSize = useWindowSize();
 
@@ -42,7 +44,7 @@ const ProjectPreview = ({
         navigate(Path.DESKTOP_PROJECT_LIST);
       } else if (project) {
         setProject(project);
-        navigate(Path.PROJECT_DETAILS);
+        setDesktopShowProjectDetails(true);
       }
     }
   };

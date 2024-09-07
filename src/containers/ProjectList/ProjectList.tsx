@@ -1,4 +1,5 @@
 // BASE MODULES
+import { useState } from 'react';
 import { connect } from 'react-redux';
 
 // CUSTOM MODULES
@@ -13,18 +14,28 @@ import styles from './ProjectList.module.scss';
 import ProjectPreview from '../../components/ProjectPreview/ProjectPreview';
 import { Link } from 'react-router-dom';
 import BackButtonArrow from '../../components/BackButtonArrow/BackButtonArrow';
+import ProjectDetailsView from '../../components/ProjectDetailsView/ProjectDetailsView';
 
 interface ProjectListProps {
   projectType: IProjectType;
 }
 
 const ProjectList = ({ projectType }: ProjectListProps) => {
+  const [showDesktopProjectDetails, setDesktopShowProjectDetails] =
+    useState<boolean>(false);
+
   const windowSize = useWindowSize();
 
   const projects: IProject[] = projectData[projectType.type];
 
   const projectListView = projects.map((project) => {
-    return <ProjectPreview project={project} key={project.name} />;
+    return (
+      <ProjectPreview
+        project={project}
+        key={project.name}
+        setDesktopShowProjectDetails={setDesktopShowProjectDetails}
+      />
+    );
   });
 
   return (
@@ -52,6 +63,10 @@ const ProjectList = ({ projectType }: ProjectListProps) => {
       />
 
       <section className={styles.ProjectListView}>{projectListView}</section>
+
+      {isDesktop(windowSize) && showDesktopProjectDetails ? (
+        <ProjectDetailsView />
+      ) : null}
     </section>
   );
 };
