@@ -12,7 +12,9 @@ const Logo = (props: LogoProps) => {
   return (
     <>
       <img
-        src={'./src/assets/my_logo_purple.png'}
+        src={
+          'https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/my_logo_purple.png?raw=true'
+        }
         style={{ height: 'auto', width: `${width}px` }}
       />
     </>
