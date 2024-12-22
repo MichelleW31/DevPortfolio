@@ -26,7 +26,8 @@ const ProjectList = ({ projectType }: ProjectListProps) => {
 
   const windowSize = useWindowSize();
 
-  const projects: IProject[] = projectData[projectType.type];
+  const projects: IProject[] =
+    projectData[projectType.type as keyof typeof projectData];
 
   const projectListView = projects.map((project) => {
     return (
