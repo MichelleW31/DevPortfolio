@@ -1,17 +1,4 @@
 @import '../../variables/_variables.scss';
 
 .ProductDetailsContainer {
-  .NameCopyContainer {
-    margin-top: 40px;
-
-    .TitleCopy {
-      color: #fff;
-      font-size: 30px;
-      padding: 0px 35px 0px;
-
-      @media (min-width: $desktopWidth) {
-        color: $darkPurple;
-      }
-    }
-  }
 }

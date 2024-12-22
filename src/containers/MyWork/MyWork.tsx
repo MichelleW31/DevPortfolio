@@ -16,7 +16,9 @@ const MyWork = () => {
   const myWorkContainer = useRef(null);
 
   useEffect(() => {
-    myWorkContainer.current.scrollIntoView({ behavior: 'smooth' });
+    if (myWorkContainer.current) {
+      myWorkContainer.current.scrollIntoView({ behavior: 'smooth' });
+    }
   });
 
   const projectTypeView = projectTypes.data.map((projectType: IProjectType) => {

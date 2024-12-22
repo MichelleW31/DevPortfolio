@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 // CUSTOM MODULES
-import { IProject, IProjectType, IState, Path } from '../../types';
+import { IProject, IProjectType, Path } from '../../types';
 import { isDesktop } from '../../utilities/responsiveness';
 import useWindowSize from '../../hooks/windowSize';
 import { capitalizeFirstLetter } from '../../utilities/formatting';
@@ -13,9 +13,9 @@ import styles from './ProjectPreview.module.scss';
 interface ProjectPreviewProps {
   projectType?: IProjectType;
   project?: IProject;
-  setProjectType: any;
-  setProject: any;
-  setDesktopShowProjectDetails: any;
+  setProjectType: (projectType: IProjectType) => void;
+  setProject: (project: IProject) => void;
+  setDesktopShowProjectDetails?: (isTrue: boolean) => void;
 }
 
 const ProjectPreview = ({
@@ -51,7 +51,7 @@ const ProjectPreview = ({
 
   const previewName = projectType
     ? capitalizeFirstLetter(projectType.name)
-    : capitalizeFirstLetter(project.name);
+    : project && capitalizeFirstLetter(project.name);
 
   return (
     <section
@@ -64,7 +64,7 @@ const ProjectPreview = ({
   );
 };
 
-const mapStateToProps = (state: IState) => {
+const mapStateToProps = () => {
   return {
     // project: state.project.project,
   };

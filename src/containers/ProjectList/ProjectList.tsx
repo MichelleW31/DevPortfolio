@@ -40,33 +40,37 @@ const ProjectList = ({ projectType }: ProjectListProps) => {
 
   return (
     <section className={styles.ProjectListContainer}>
-      {!isDesktop(windowSize) ? (
-        <BackButton copy="Back to My Work" path={Path.ROOT} />
-      ) : (
-        <>
-          <Link className={styles.BackLink} to={Path.MY_WORK}>
-            <BackButtonArrow />
-            <span className={styles.BackLinkCopy}>Back to My Work</span>
-          </Link>
-        </>
-      )}
+      <section className={styles.Projects}>
+        {!isDesktop(windowSize) ? (
+          <BackButton copy="Back to My Work" path={Path.ROOT} />
+        ) : (
+          <>
+            <Link className={styles.BackLink} to={Path.MY_WORK}>
+              <BackButtonArrow />
+              <span className={styles.BackLinkCopy}>Back to My Work</span>
+            </Link>
+          </>
+        )}
 
-      <section className={styles.NameCopyContainer}>
-        <h2 className={styles.TitleCopy}>
-          {capitalizeFirstLetter(projectType.type)} Projects
-        </h2>
+        <section className={styles.NameCopyContainer}>
+          <h2 className={styles.TitleCopy}>
+            {capitalizeFirstLetter(projectType.type)} Projects
+          </h2>
+        </section>
+
+        <Bar
+          bgColor={isDesktop(windowSize) ? '#5448a1' : '#fff'}
+          width={isDesktop(windowSize) ? '45%' : '75%'}
+        />
+
+        <section className={styles.ProjectListView}>{projectListView}</section>
       </section>
 
-      <Bar
-        bgColor={isDesktop(windowSize) ? '#5448a1' : '#fff'}
-        width={isDesktop(windowSize) ? '45%' : '75%'}
-      />
-
-      <section className={styles.ProjectListView}>{projectListView}</section>
-
-      {isDesktop(windowSize) && showDesktopProjectDetails ? (
-        <ProjectDetailsView />
-      ) : null}
+      <section className={styles.ProjectDetails}>
+        {isDesktop(windowSize) && showDesktopProjectDetails ? (
+          <ProjectDetailsView />
+        ) : null}
+      </section>
     </section>
   );
 };

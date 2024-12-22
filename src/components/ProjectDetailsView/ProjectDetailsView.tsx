@@ -4,8 +4,12 @@ import { Link } from 'react-router-dom';
 
 // CUSTOM MODULES
 import ProjectImageGallery from '../ImageGallery/ProjectImageGallery';
-import { IProject } from '../../types';
+import { IProject, IState } from '../../types';
 import TechnologyIcon from '../TechnologyIcon/TechnologyIcon';
+import Bar from '../../components/Bar/Bar';
+import { capitalizeFirstLetter } from '../../utilities/formatting';
+import { isDesktop } from '../../utilities/responsiveness';
+import useWindowSize from '../../hooks/windowSize';
 import styles from './ProjectDetailsView.module.scss';
 
 interface ProjectDetailsViewProps {
@@ -13,12 +17,24 @@ interface ProjectDetailsViewProps {
 }
 
 const ProjectDetailsView = ({ project }: ProjectDetailsViewProps) => {
+  const windowSize = useWindowSize();
+
   const techIcons = project.technologies.map((technology) => (
     <TechnologyIcon techName={technology} key={technology} />
   ));
 
   return (
     <section className={styles.ProjectDetailsViewContainer}>
+      <section className={styles.NameCopyContainer}>
+        <h2 className={styles.TitleCopy}>
+          {capitalizeFirstLetter(project.name)}
+        </h2>
+      </section>
+
+      {!isDesktop(windowSize) && (
+        <Bar bgColor="#fff" width={isDesktop(windowSize) ? '45%' : '75%'} />
+      )}
+
       <ProjectImageGallery images={project.images} />
 
       <section className={styles.TechnologyContainer}>{techIcons}</section>

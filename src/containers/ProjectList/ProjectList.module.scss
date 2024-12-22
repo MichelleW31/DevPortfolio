@@ -5,8 +5,22 @@
 
   @media (min-width: $desktopWidth) {
     background-color: transparent;
+    // display: flex;
+    justify-content: space-between;
     padding-top: 40px;
   }
+
+  // .Projects {
+  //   @media (min-width: $desktopWidth) {
+  //     width: 100%;
+  //   }
+  // }
+
+  // .ProjectDetails {
+  //   @media (min-width: $desktopWidth) {
+  //     width: 45%;
+  //   }
+  // }
 
   .BackLink {
     padding: 0 35px;
