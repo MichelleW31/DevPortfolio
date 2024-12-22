@@ -1,5 +1,5 @@
 // BASE MODULES
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 // CUSTOM MODULES
 import Bar from '../../components/Bar/Bar';
@@ -11,9 +11,12 @@ import projectTypes from '../../utilities/projectTypes.json';
 import styles from './MyWork.module.scss';
 
 const MyWork = () => {
+  const [showDesktopProjectDetails, setDesktopShowProjectDetails] =
+    useState<boolean>(false);
   const windowSize = useWindowSize();
+  console.log(showDesktopProjectDetails);
 
-  const myWorkContainer = useRef(null);
+  const myWorkContainer = useRef<null | HTMLDivElement>(null);
 
   useEffect(() => {
     if (myWorkContainer.current) {
@@ -22,7 +25,13 @@ const MyWork = () => {
   });
 
   const projectTypeView = projectTypes.data.map((projectType: IProjectType) => {
-    return <ProjectPreview projectType={projectType} key={projectType.name} />;
+    return (
+      <ProjectPreview
+        projectType={projectType}
+        key={projectType.name}
+        setDesktopShowProjectDetails={setDesktopShowProjectDetails}
+      />
+    );
   });
 
   return (

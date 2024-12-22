@@ -15,7 +15,7 @@ interface ProjectPreviewProps {
   project?: IProject;
   setProjectType: (projectType: IProjectType) => void;
   setProject: (project: IProject) => void;
-  setDesktopShowProjectDetails?: (isTrue: boolean) => void;
+  setDesktopShowProjectDetails: (isTrue: boolean) => void;
 }
 
 const ProjectPreview = ({
