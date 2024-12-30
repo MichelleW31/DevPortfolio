@@ -61,7 +61,7 @@ const ProjectList = ({ projectType }: ProjectListProps) => {
 
         <Bar
           bgColor={isDesktop(windowSize) ? '#5448a1' : '#fff'}
-          width={isDesktop(windowSize) ? '45%' : '75%'}
+          width={isDesktop(windowSize) ? '95%' : '75%'}
         />
 
         <section className={styles.ProjectListView}>{projectListView}</section>

@@ -1,4 +1,10 @@
+@import '../../variables/_variables.scss';
+
 .ImageGalleryContainer {
   margin: 60px auto 0;
   width: 100%;
+
+  @media (min-width: $desktopWidth) {
+    margin-top: 0px;
+  }
 }

@@ -17,6 +17,7 @@
   }
 
   @media (min-width: $desktopWidth) {
+    box-sizing: border-box;
     justify-content: space-between;
     padding: 20px 25px;
     width: 100%;

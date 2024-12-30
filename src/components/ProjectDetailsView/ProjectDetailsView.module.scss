@@ -11,7 +11,14 @@
 
       @media (min-width: $desktopWidth) {
         color: $darkPurple;
+        font-size: 40px;
+        padding-left: 0;
+        margin-bottom: 25px;
       }
+    }
+
+    @media (min-width: $desktopWidth) {
+      margin-top: 120px;
     }
   }
 
@@ -41,5 +48,9 @@
       font-family: 'Inter-Medium';
       font-size: 14px;
     }
+  }
+
+  @media (min-width: $desktopWidth) {
+    // margin-left: 50px;
   }
 }

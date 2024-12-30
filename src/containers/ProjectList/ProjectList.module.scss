@@ -5,22 +5,22 @@
 
   @media (min-width: $desktopWidth) {
     background-color: transparent;
-    // display: flex;
+    display: flex;
     justify-content: space-between;
     padding-top: 40px;
   }
 
-  // .Projects {
-  //   @media (min-width: $desktopWidth) {
-  //     width: 100%;
-  //   }
-  // }
+  .Projects {
+    @media (min-width: $desktopWidth) {
+      width: 50%;
+    }
+  }
 
-  // .ProjectDetails {
-  //   @media (min-width: $desktopWidth) {
-  //     width: 45%;
-  //   }
-  // }
+  .ProjectDetails {
+    @media (min-width: $desktopWidth) {
+      width: 45%;
+    }
+  }
 
   .BackLink {
     padding: 0 35px;
@@ -35,7 +35,8 @@
     margin-top: 40px;
 
     @media (min-width: $desktopWidth) {
-      margin-top: 10px;
+      margin-top: 45px;
+      margin-bottom: 10px;
     }
   }
 
@@ -46,6 +47,7 @@
 
     @media (min-width: $desktopWidth) {
       color: $darkPurple;
+      font-size: 40px;
     }
   }
 
@@ -59,7 +61,7 @@
 
     @media (min-width: $desktopWidth) {
       padding: 55px 35px 0px;
-      width: 30%;
+      width: 60%;
     }
   }
 }
