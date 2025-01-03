@@ -3,8 +3,8 @@
     {
       "name": "AARP",
       "projectType": "company",
-      "technologies": ["React", "Typescript", "NodeJS"],
-      "overview": "AARP Overview",
+      "technologies": ["AEM", "Javascript", "BEM"],
+      "overview": "The AARP Rewards project focuses on enhancing user engagement through an interactive rewards platform. Designed for AARP members, the platform offers a dynamic user interface (UI) that allows users to explore and redeem rewards, track progress, and participate in various activities.",
       "live_link": "https://www.aarp.org/rewards/",
       "images": [
         {
@@ -29,7 +29,7 @@
       "name": "Driveway",
       "projectType": "company",
       "technologies": ["React", "Typescript", "NodeJS"],
-      "overview": "Driveway Overview",
+      "overview": "The Driveway.com Sell Your Car project provides users with a user-friendly process to sell their vehicles online. The platform allows users to receive instant quotes, schedule vehicle inspections, and complete transactions, all from the comfort of their homes. This project focused on creating an engaging and responsive front-end experience to simplify the car-selling journey.",
       "live_link": "https://www.driveway.com/sell-your-car",
       "images": [
         {
@@ -57,8 +57,8 @@
     {
       "name": "Dominos",
       "projectType": "company",
-      "technologies": ["React", "Typescript", "NodeJS"],
-      "overview": "Dominos Overview",
+      "technologies": ["React", "Typescript", "Adobe Target"],
+      "overview": "The Domino’s UI Optimization project focused on improving user engagement and maximizing revenue by designing and testing various user interface (UI) scenarios. Leveraging Adobe Target for A/B testing, the goal was to identify and implement the most effective UI experience for Domino’s customers.",
       "live_link": "https://www.dominos.com/",
       "images": [
         {
@@ -85,13 +85,9 @@
       "name": "TripSlip",
       "projectType": "freelance",
       "technologies": ["React Native", "Typescript", "NodeJS"],
-      "overview": "TripSlip Overview",
+      "overview": "The TripSlip project involved designing and developing a mobile application to streamline the field trip management process for parents and teachers. Built with React Native and TypeScript, the app provides a user-friendly platform for parents to view field trip details and sign digital permission slips, while teachers can track permissions and manage student participation efficiently. The backend was developed using Node.js to ensure a scalable and reliable infrastructure.",
       "live_link": "https://apps.apple.com/in/app/tripslip/id6466344424",
       "images": [
-        {
-          "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Tripslip/TS_1.png?raw=true",
-          "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Tripslip/TS_1.png?raw=true"
-        },
         {
           "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Tripslip/TS_2.png?raw=true",
           "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Tripslip/TS_2.png?raw=true"
@@ -127,8 +123,8 @@
     {
       "name": "MoDrip",
       "projectType": "side",
-      "technologies": ["React Native", "Typescript", "NodeJS"],
-      "overview": "MoDrip Overview",
+      "technologies": ["React Native", "Typescript", "NodeJS", "C++"],
+      "overview": "The Modrip project is a smart plant watering system that monitors and displays real-time data about soil moisture, room temperature, and humidity to help users maintain healthy plants. This system combines hardware and software, integrating a React Native mobile application with a sensor-equipped Arduino Nano for precise monitoring and control. The backend, developed using Node.js, facilitates communication between the app and the plant sensors.",
       "github_link": "",
       "live_link": "",
       "images": [
@@ -173,8 +169,8 @@
     {
       "name": "Foodio",
       "projectType": "side",
-      "technologies": ["React", "Typescript", "NodeJS"],
-      "overview": "Foodio Overview",
+      "technologies": ["React", "CSS"],
+      "overview": "The Foodio project involved creating a modern web application that combines the aesthetics and functionality of a social media platform, like Instagram, with the utility of a recipe-sharing platform. Foodio allows users to explore a curated feed of recipes, view detailed instructions, and save their favorites by hearting them. ",
       "github_link": "https://github.com/MichelleW31/Foodio",
       "live_link": "michellew31.github.io/Foodio/",
       "images": [
@@ -191,8 +187,8 @@
     {
       "name": "BGM Bank",
       "projectType": "side",
-      "technologies": ["React", "Typescript", "NodeJS"],
-      "overview": "BGM Bank Overview",
+      "technologies": ["React", "NodeJS", "ExpressJS"],
+      "overview": "The BGM Bank project involved developing a mock sign-in form for a fictional banking platform. The primary purpose of this project was to practice creating and managing API calls to handle user input securely and efficiently. The application simulates a real-world bank login system, allowing users to input their credentials and sending the data to a mock backend for processing. Built with React for the front end and Node.js for the backend, this project focused on integrating front-end forms with backend APIs.",
       "github_link": "https://github.com/MichelleW31/BGM_FE",
       "live_link": "michellew31.github.io/BGM_FE/",
       "images": [

@@ -28,29 +28,47 @@
     justify-content: space-between;
     margin: 40px 0 45px;
     padding: 0 35px;
+
+    @media (min-width: $desktopWidth) {
+      justify-content: flex-start;
+      padding: 0;
+    }
   }
 
   .OverviewContainer {
     padding: 0 35px;
 
     .OverviewTitle {
-      font-family: 'Inter-Medium';
+      font-family: 'Inter-Bold';
       margin-bottom: 15px;
+
+      @media (min-width: $desktopWidth) {
+        font-size: 18px;
+      }
     }
 
     .OverviewCopy {
       font-family: 'Inter-Regular';
       font-size: 14px;
       margin-bottom: 15px;
+
+      @media (min-width: $desktopWidth) {
+        font-size: 16px;
+      }
     }
 
     .LinkCopy {
       font-family: 'Inter-Medium';
       font-size: 14px;
-    }
-  }
 
-  @media (min-width: $desktopWidth) {
-    // margin-left: 50px;
+      @media (min-width: $desktopWidth) {
+        font-size: 16px;
+      }
+    }
+
+    @media (min-width: $desktopWidth) {
+      color: $grey;
+      padding: 0;
+    }
   }
 }

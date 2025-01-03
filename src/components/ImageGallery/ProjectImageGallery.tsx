@@ -18,6 +18,7 @@ const ProjectImageGallery = ({ images }: ProjectImageGalleryProps) => {
         autoPlay={false}
         showFullscreenButton={false}
         showPlayButton={false}
+        showThumbnails={false}
         // thumbnailPosition="left"
       />
     </section>
