@@ -10,12 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@types/node": "^22.10.5",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.2.22",
     "@types/react-image-gallery": "^1.2.4",
