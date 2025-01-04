@@ -7,6 +7,8 @@ import Bar from '../../components/Bar/Bar';
 import { isDesktop } from '../../utilities/responsiveness';
 import useWindowSize from '../../hooks/windowSize';
 import { MessageCopy } from '../../types';
+import LinkedIn from '../../assets/icons/LinkedIn';
+import Github from '../../assets/icons/Github';
 import styles from './Contact.module.scss';
 
 const Contact = () => {
@@ -100,6 +102,11 @@ const Contact = () => {
           )}
         </section>
       )}
+
+      <section className={styles.IconContainer}>
+        <LinkedIn />
+        <Github />
+      </section>
     </section>
   );
 };
