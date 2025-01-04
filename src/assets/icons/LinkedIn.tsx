@@ -6,7 +6,9 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 // CUSTOM MODULES
 
 const LinkedIn = () => {
-  return <FontAwesomeIcon icon={faLinkedin as IconProp} color="#5448a1" />;
+  return (
+    <FontAwesomeIcon icon={faLinkedin as IconProp} color="#5448a1" size="2x" />
+  );
 };
 
 export default LinkedIn;

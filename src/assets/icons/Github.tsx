@@ -6,7 +6,9 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 // CUSTOM MODULES
 
 const Github = () => {
-  return <FontAwesomeIcon icon={faGithub as IconProp} color="#5448a1" />;
+  return (
+    <FontAwesomeIcon icon={faGithub as IconProp} color="#5448a1" size="2x" />
+  );
 };
 
 export default Github;

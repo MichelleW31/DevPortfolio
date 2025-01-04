@@ -57,15 +57,12 @@ const Contact = () => {
     <section className={styles.ContactContainer}>
       <h2 className={styles.TitleCopy}>Get in Touch</h2>
 
-      <Bar
-        bgColor={isDesktop(windowSize) ? '#5448a1' : '#fff'}
-        width={isDesktop(windowSize) ? '45%' : '75%'}
-      />
+      <Bar bgColor="#5448a1" width={isDesktop(windowSize) ? '45%' : '75%'} />
 
       <section className={styles.BodyCopyContainer}>
-        <p>Want to chat about future work?</p>
+        <p className={styles.BodyCopy}>Want to chat about future work?</p>
 
-        <p>Feel free to reach out!</p>
+        <p className={styles.BodyCopy}>Feel free to reach out!</p>
       </section>
 
       <section className={styles.ContactFormContainer}>
@@ -74,39 +71,45 @@ const Contact = () => {
           onChange={(e) => setName(e.target.value)}
           placeholder="Name"
           type="text"
+          className={styles.Input}
         />
         <input
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Email"
           type="text"
+          className={styles.Input}
         />
-        <input
+        <textarea
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           placeholder="Message"
-          type="text"
+          className={styles.TextArea}
         />
+
+        <button type="button" onClick={sendMessage} className={styles.Button}>
+          Send
+        </button>
       </section>
-
-      <button type="button" onClick={sendMessage}>
-        Send
-      </button>
-
-      {showMessageResults && (
-        <section>
-          {messageSuccessful ? (
-            <p>{MessageCopy.SUCCESSFUL} </p>
-          ) : (
-            <p>{MessageCopy.UNSUCCESSFUL}</p>
-          )}
-        </section>
-      )}
 
       <section className={styles.IconContainer}>
         <LinkedIn />
         <Github />
       </section>
+
+      {showMessageResults && (
+        <section className={styles.MessageConfirmCopyContainer}>
+          {messageSuccessful ? (
+            <p className={styles.MessageConfirmCopy}>
+              {MessageCopy.SUCCESSFUL}{' '}
+            </p>
+          ) : (
+            <p className={styles.MessageConfirmCopy}>
+              {MessageCopy.UNSUCCESSFUL}
+            </p>
+          )}
+        </section>
+      )}
     </section>
   );
 };

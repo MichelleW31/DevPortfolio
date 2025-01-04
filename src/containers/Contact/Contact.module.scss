@@ -1,1 +1,97 @@
 @import '../../variables/_variables.scss';
+
+.ContactContainer {
+  background-color: $lightPurple;
+  padding: 50px 0 60px;
+
+  .TitleCopy {
+    color: $darkPurple;
+    font-size: 30px;
+    padding: 0px 35px 0px;
+
+    @media (min-width: $desktopWidth) {
+      color: $darkPurple;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .BodyCopyContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 30px;
+  }
+
+  .BodyCopy {
+    color: $grey;
+    font-family: 'Inter-Regular';
+    font-size: 18px;
+  }
+
+  .ContactFormContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .Input {
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom-color: $midPurple;
+    border-bottom-width: 2px;
+    color: $grey;
+    font-family: 'Inter-Regular';
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 75%;
+  }
+
+  .TextArea {
+    background-color: transparent;
+    border-color: $midPurple;
+    border-width: 2px;
+    color: $grey;
+    font-family: 'Inter-Regular';
+    font-size: 14px;
+    line-height: 27px;
+    margin: 20px 0 40px;
+    padding: 10px;
+    width: 75%;
+  }
+
+  ::placeholder {
+    color: $midPurple;
+  }
+
+  .Button {
+    background-color: $midPurple;
+    border-radius: 3px;
+    font-family: 'Inter-Medium';
+    margin: 0 0 40px;
+    width: 80%;
+  }
+
+  .IconContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    padding: 0 170px;
+  }
+
+  .MessageConfirmCopyContainer {
+    background-color: $darkPurple;
+    padding: 10px 0;
+  }
+
+  .MessageConfirmCopy {
+    color: #fff;
+    font-family: 'Inter-Medium';
+    font-size: 17px;
+    text-align: center;
+  }
+}

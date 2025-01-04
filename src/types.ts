@@ -16,7 +16,7 @@ export enum ProjectTypes {
 }
 
 export enum MessageCopy {
-  SUCCESSFUL = 'Your message was sent successfully.',
+  SUCCESSFUL = 'Your message was sent successfully!',
   UNSUCCESSFUL = 'There was a problem sending your message. Please try again later.',
 }
 
