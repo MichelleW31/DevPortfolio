@@ -15,6 +15,11 @@ export enum ProjectTypes {
   SIDE = 'side',
 }
 
+export enum MessageCopy {
+  SUCCESSFUL = 'Your message was sent successfully.',
+  UNSUCCESSFUL = 'There was a problem sending your message. Please try again later.',
+}
+
 export interface IProjectType {
   name: string;
   type: string;

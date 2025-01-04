@@ -6,6 +6,7 @@ import emailjs from '@emailjs/browser';
 import Bar from '../../components/Bar/Bar';
 import { isDesktop } from '../../utilities/responsiveness';
 import useWindowSize from '../../hooks/windowSize';
+import { MessageCopy } from '../../types';
 import styles from './Contact.module.scss';
 
 const Contact = () => {
@@ -17,6 +18,13 @@ const Contact = () => {
 
   const [messageSuccessful, setMessageSuccessful] = useState<boolean>(false);
   const [showMessageResults, setShowMessageResults] = useState<boolean>(false);
+
+  // CLEAR INPUTS
+  const clearInputs = () => {
+    setName('');
+    setEmail('');
+    setMessage('');
+  };
 
   // SEND MESSAGE
   const sendMessage = () => {
@@ -32,11 +40,13 @@ const Contact = () => {
           console.log('Message sent successfully:', result.text);
           setShowMessageResults(true);
           setMessageSuccessful(true);
+          clearInputs();
         },
         (error) => {
           console.error('Error sending message:', error);
           setShowMessageResults(true);
           setMessageSuccessful(false);
+          clearInputs();
         }
       );
   };
@@ -80,6 +90,16 @@ const Contact = () => {
       <button type="button" onClick={sendMessage}>
         Send
       </button>
+
+      {showMessageResults && (
+        <section>
+          {messageSuccessful ? (
+            <p>{MessageCopy.SUCCESSFUL} </p>
+          ) : (
+            <p>{MessageCopy.UNSUCCESSFUL}</p>
+          )}
+        </section>
+      )}
     </section>
   );
 };
