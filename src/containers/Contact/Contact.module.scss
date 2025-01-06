@@ -16,17 +16,47 @@
     }
   }
 
+  .MessageandSocialContainer {
+    @media (min-width: $desktopWidth) {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+  }
+
+  .MessageContainer {
+    @media (min-width: $desktopWidth) {
+      margin-left: 40px;
+      width: 45%;
+    }
+  }
+
+  .SocialMediaContainer {
+    @media (min-width: $desktopWidth) {
+      width: 45%;
+    }
+  }
+
   .BodyCopyContainer {
     align-items: center;
     display: flex;
     flex-direction: column;
     margin: 50px 0 30px;
+
+    @media (min-width: $desktopWidth) {
+      align-items: flex-start;
+      margin-top: 0;
+    }
   }
 
   .BodyCopy {
     color: $grey;
     font-family: 'Inter-Regular';
     font-size: 18px;
+
+    @media (min-width: $desktopWidth) {
+      font-size: 17px;
+    }
   }
 
   .ContactFormContainer {
@@ -34,6 +64,10 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+
+    @media (min-width: $desktopWidth) {
+      align-items: flex-start;
+    }
   }
 
   .Input {
@@ -49,6 +83,10 @@
     margin-bottom: 20px;
     padding: 10px;
     width: 75%;
+
+    @media (min-width: $desktopWidth) {
+      width: 70%;
+    }
   }
 
   .TextArea {
@@ -60,13 +98,18 @@
     font-size: 14px;
     line-height: 27px;
     margin: 20px 0 40px;
-    padding: 10px;
+    padding: 5px 10px;
     width: 75%;
+
+    @media (min-width: $desktopWidth) {
+      margin-bottom: 70px;
+      width: 70%;
+    }
   }
 
   ::placeholder {
     color: $midPurple;
-    font-family: 'Inter-Medium';
+    font-family: 'Inter-Bold';
   }
 
   .Button {
@@ -75,6 +118,10 @@
     font-family: 'Inter-Bold';
     margin: 0 0 40px;
     width: 80%;
+
+    @media (min-width: $desktopWidth) {
+      width: 60%;
+    }
   }
 
   .IconContainer {
@@ -82,6 +129,14 @@
     justify-content: space-around;
     margin-bottom: 30px;
     padding: 0 170px;
+
+    @media (min-width: $desktopWidth) {
+      flex-direction: column;
+      justify-content: space-around;
+      height: 25%;
+      margin-top: 100px;
+      padding: 0;
+    }
   }
 
   .MessageConfirmCopyContainer {
@@ -94,5 +149,9 @@
     font-family: 'Inter-Medium';
     font-size: 17px;
     text-align: center;
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding-top: 105px;
   }
 }

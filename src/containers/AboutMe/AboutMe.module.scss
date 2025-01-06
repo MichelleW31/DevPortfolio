@@ -12,11 +12,19 @@
     color: $grey;
     font-family: 'Inter-SemiBold';
     font-size: 18px;
+
+    @media (min-width: $desktopWidth) {
+      font-size: 22px;
+    }
   }
 
   .TitleCopy {
     color: $darkPurple;
     font-size: 30px;
+
+    @media (min-width: $desktopWidth) {
+      font-size: 40px;
+    }
   }
 
   .AboutMeCopy {
@@ -42,6 +50,6 @@
   }
 
   @media (min-width: $desktopWidth) {
-    padding: 105px 0px 15px;
+    padding: 91px 0px 15px;
   }
 }

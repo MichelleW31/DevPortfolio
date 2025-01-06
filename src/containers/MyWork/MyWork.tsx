@@ -39,7 +39,7 @@ const MyWork = () => {
       <h2 className={styles.TitleCopy}>My Work</h2>
       <Bar
         bgColor={isDesktop(windowSize) ? '#5448a1' : '#fff'}
-        width={isDesktop(windowSize) ? '45%' : '75%'}
+        width={isDesktop(windowSize) ? '40%' : '75%'}
       />
 
       <section className={styles.ProjectsContainer}>{projectTypeView}</section>

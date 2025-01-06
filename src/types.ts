@@ -20,6 +20,16 @@ export enum MessageCopy {
   UNSUCCESSFUL = 'There was a problem sending your message. Please try again later.',
 }
 
+export enum SocialMediaCopy {
+  LINKEDIN = 'linkedin.com/in/michellewilliams31',
+  GITHUB = 'github.com/MichelleW31',
+}
+
+export enum SocialMediaLinks {
+  LINKEDIN = 'https://www.linkedin.com/in/michellewilliams31/',
+  GITHUB = 'https://github.com/MichelleW31',
+}
+
 export interface IProjectType {
   name: string;
   type: string;

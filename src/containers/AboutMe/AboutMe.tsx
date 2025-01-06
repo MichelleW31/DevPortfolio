@@ -16,7 +16,7 @@ const AboutMe = () => {
         <h2 className={styles.TitleCopy}>Software Engineer</h2>
       </section>
 
-      <Bar bgColor="#5448A1" width={isDesktop(windowSize) ? '45%' : '75%'} />
+      <Bar bgColor="#5448A1" width={isDesktop(windowSize) ? '40%' : '75%'} />
 
       <section className={styles.AboutMeCopy}>
         <h3 className={styles.AboutMeTitle}>About Me</h3>

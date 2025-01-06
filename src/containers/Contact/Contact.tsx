@@ -57,68 +57,77 @@ const Contact = () => {
     <section className={styles.ContactContainer}>
       <h2 className={styles.TitleCopy}>Get in Touch</h2>
 
-      <Bar bgColor="#5448a1" width={isDesktop(windowSize) ? '45%' : '75%'} />
+      <Bar bgColor="#5448a1" width={isDesktop(windowSize) ? '40%' : '75%'} />
+      <section className={styles.MessageandSocialContainer}>
+        <section className={styles.MessageContainer}>
+          <section className={styles.BodyCopyContainer}>
+            <p className={styles.BodyCopy}>Want to chat about future work?</p>
 
-      <section className={styles.BodyCopyContainer}>
-        <p className={styles.BodyCopy}>Want to chat about future work?</p>
+            <p className={styles.BodyCopy}>Feel free to reach out!</p>
+          </section>
 
-        <p className={styles.BodyCopy}>Feel free to reach out!</p>
-      </section>
+          <section className={styles.ContactFormContainer}>
+            <input
+              value={name}
+              onChange={(e) => {
+                setName(e.target.value);
+                setShowMessageResults(false);
+              }}
+              placeholder="Name"
+              type="text"
+              className={styles.Input}
+            />
+            <input
+              value={email}
+              onChange={(e) => {
+                setEmail(e.target.value);
+                setShowMessageResults(false);
+              }}
+              placeholder="Email"
+              type="text"
+              className={styles.Input}
+            />
+            <textarea
+              value={message}
+              onChange={(e) => {
+                setMessage(e.target.value);
+                setShowMessageResults(false);
+              }}
+              placeholder="Message"
+              className={styles.TextArea}
+            />
 
-      <section className={styles.ContactFormContainer}>
-        <input
-          value={name}
-          onChange={(e) => {
-            setName(e.target.value);
-            setShowMessageResults(false);
-          }}
-          placeholder="Name"
-          type="text"
-          className={styles.Input}
-        />
-        <input
-          value={email}
-          onChange={(e) => {
-            setEmail(e.target.value);
-            setShowMessageResults(false);
-          }}
-          placeholder="Email"
-          type="text"
-          className={styles.Input}
-        />
-        <textarea
-          value={message}
-          onChange={(e) => {
-            setMessage(e.target.value);
-            setShowMessageResults(false);
-          }}
-          placeholder="Message"
-          className={styles.TextArea}
-        />
+            <button
+              type="button"
+              onClick={sendMessage}
+              className={styles.Button}
+            >
+              Send
+            </button>
+          </section>
+        </section>
 
-        <button type="button" onClick={sendMessage} className={styles.Button}>
-          Send
-        </button>
-      </section>
+        <section className={styles.SocialMediaContainer}>
+          <section className={styles.IconContainer}>
+            <LinkedIn />
+            <Github />
+          </section>
 
-      <section className={styles.IconContainer}>
-        <LinkedIn />
-        <Github />
-      </section>
-
-      {showMessageResults && (
-        <section className={styles.MessageConfirmCopyContainer}>
-          {messageSuccessful ? (
-            <p className={styles.MessageConfirmCopy}>
-              {MessageCopy.SUCCESSFUL}{' '}
-            </p>
-          ) : (
-            <p className={styles.MessageConfirmCopy}>
-              {MessageCopy.UNSUCCESSFUL}
-            </p>
+          {showMessageResults && (
+            <section className={styles.MessageConfirmCopyContainer}>
+              {messageSuccessful ? (
+                <p className={styles.MessageConfirmCopy}>
+                  {MessageCopy.SUCCESSFUL}{' '}
+                </p>
+              ) : (
+                <p className={styles.MessageConfirmCopy}>
+                  {MessageCopy.UNSUCCESSFUL}
+                </p>
+              )}
+            </section>
           )}
         </section>
-      )}
+      </section>
     </section>
   );
 };
