@@ -66,12 +66,13 @@
 
   ::placeholder {
     color: $midPurple;
+    font-family: 'Inter-Medium';
   }
 
   .Button {
     background-color: $midPurple;
     border-radius: 3px;
-    font-family: 'Inter-Medium';
+    font-family: 'Inter-Bold';
     margin: 0 0 40px;
     width: 80%;
   }

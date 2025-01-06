@@ -7,7 +7,13 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 const LinkedIn = () => {
   return (
-    <FontAwesomeIcon icon={faLinkedin as IconProp} color="#5448a1" size="2x" />
+    <a href="https://www.linkedin.com/in/michellewilliams31/" target="_blank">
+      <FontAwesomeIcon
+        icon={faLinkedin as IconProp}
+        color="#5448a1"
+        size="2x"
+      />
+    </a>
   );
 };
 

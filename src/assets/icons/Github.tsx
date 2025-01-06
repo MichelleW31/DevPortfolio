@@ -7,7 +7,9 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 const Github = () => {
   return (
-    <FontAwesomeIcon icon={faGithub as IconProp} color="#5448a1" size="2x" />
+    <a href="https://github.com/MichelleW31" target="_blank">
+      <FontAwesomeIcon icon={faGithub as IconProp} color="#5448a1" size="2x" />
+    </a>
   );
 };
 
