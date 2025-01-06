@@ -68,21 +68,30 @@ const Contact = () => {
       <section className={styles.ContactFormContainer}>
         <input
           value={name}
-          onChange={(e) => setName(e.target.value)}
+          onChange={(e) => {
+            setName(e.target.value);
+            setShowMessageResults(false);
+          }}
           placeholder="Name"
           type="text"
           className={styles.Input}
         />
         <input
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => {
+            setEmail(e.target.value);
+            setShowMessageResults(false);
+          }}
           placeholder="Email"
           type="text"
           className={styles.Input}
         />
         <textarea
           value={message}
-          onChange={(e) => setMessage(e.target.value)}
+          onChange={(e) => {
+            setMessage(e.target.value);
+            setShowMessageResults(false);
+          }}
           placeholder="Message"
           className={styles.TextArea}
         />
