@@ -30,7 +30,8 @@
   }
 
   @media (min-width: $desktopWidth) {
-    background-color: $lightPurple;
+    background-color: #fff;
+    height: 100vh;
     padding-top: 105px;
   }
 }

@@ -1,7 +1,7 @@
 @import '../../variables/_variables.scss';
 
 .AboutMeContainer {
-  background-color: #ece8ff;
+  background-color: #fff;
   padding: 45px 0px 35px;
 
   .NameCopyContainer {
@@ -50,6 +50,7 @@
   }
 
   @media (min-width: $desktopWidth) {
+    height: 100vh;
     padding: 91px 0px 15px;
   }
 }

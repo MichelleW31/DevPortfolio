@@ -10,6 +10,10 @@
     font-family: 'Inter-SemiBold';
     font-weight: 900;
     width: 30%;
+
+    @media (max-width: 1353px) {
+      font-size: 15px;
+    }
   }
 
   .ActiveNavLink {
@@ -17,5 +21,9 @@
     font-family: 'Inter-SemiBold';
     font-weight: 900;
     width: 30%;
+
+    @media (max-width: 1353px) {
+      font-size: 15px;
+    }
   }
 }
