@@ -67,6 +67,6 @@
 
   @media (min-width: $desktopWidth) {
     background-color: #fff;
-    height: 100vh;
+    flex: 1 1 auto;
   }
 }
