@@ -9,6 +9,17 @@
   }
 }
 
+.DesktopImageGalleryContainer {
+  color: #000;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.DesktopImage {
+  border: 1px solid $midPurple;
+  width: 50%;
+}
+
 // .image-gallery-left-nav .image-gallery-svg {
 //   height: 10px;
 // }

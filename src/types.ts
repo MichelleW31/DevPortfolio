@@ -48,7 +48,7 @@ export interface IProject {
 
 export interface IImage {
   original: string;
-  thumbnail: string;
+  // thumbnail: string;
 }
 
 export interface IState {
