@@ -38,7 +38,7 @@
     }
 
     @media (min-width: $desktopWidth) {
-      margin-top: 65px;
+      margin-top: 120px;
       width: 70%;
     }
   }
@@ -50,7 +50,7 @@
   }
 
   @media (min-width: $desktopWidth) {
-    flex: 1 1 auto;
+    height: 100lvh;
     padding: 91px 0px 0px;
   }
 }
