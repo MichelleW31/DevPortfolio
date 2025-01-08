@@ -1,15 +1,23 @@
 // BASE MODULES
 import { legacy_createStore as createStore, combineReducers } from 'redux';
+import { persistStore, persistReducer } from 'redux-persist';
 
 // CUSTOM MODULES
 import projectReducer from './reducers/projectReducer';
+import storage from 'redux-persist/lib/storage';
+
+const persistConfig = {
+  key: 'root',
+  storage,
+};
 
 const rootReducer = combineReducers({
   project: projectReducer,
 });
 
-const configureStore = () => {
-  return createStore(rootReducer);
-};
+// @ts-ignore
+const persistedReducer = persistReducer(persistConfig, rootReducer);
 
-export default configureStore;
+export const store = createStore(persistedReducer);
+
+export const persistor = persistStore(store);

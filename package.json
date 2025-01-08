@@ -14,7 +14,8 @@
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/free-regular-svg-icons": "^6.7.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "redux-persist": "^6.0.0"
   },
   "devDependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.7.2",

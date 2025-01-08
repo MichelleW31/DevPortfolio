@@ -22,12 +22,15 @@ interface ProjectListProps {
 
 const ProjectList = ({ projectType }: ProjectListProps) => {
   const [showDesktopProjectDetails, setDesktopShowProjectDetails] =
-    useState<boolean>(false);
+    useState<boolean>(true);
 
   const windowSize = useWindowSize();
 
   const projects: IProject[] =
     projectData[projectType.type as keyof typeof projectData];
+
+  console.log('projects from project list component', projects);
+  console.log('projectType', projectType);
 
   const projectListView = projects.map((project) => {
     return (

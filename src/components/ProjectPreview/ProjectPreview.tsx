@@ -9,13 +9,14 @@ import useWindowSize from '../../hooks/windowSize';
 import { capitalizeFirstLetter } from '../../utilities/formatting';
 import { setProject, setProjectType } from '../../store/actions/projectActions';
 import styles from './ProjectPreview.module.scss';
+import { setDefaultProject } from '../../utilities/setProject';
 
 interface ProjectPreviewProps {
   projectType?: IProjectType;
   project?: IProject;
   setProjectType: (projectType: IProjectType) => void;
   setProject: (project: IProject) => void;
-  setDesktopShowProjectDetails: (isTrue: boolean) => void;
+  setDesktopShowProjectDetails?: (isTrue: boolean) => void;
 }
 
 const ProjectPreview = ({
@@ -30,6 +31,7 @@ const ProjectPreview = ({
   const navigate = useNavigate();
 
   const projectClick = () => {
+    // MOBILE
     if (!isDesktop(windowSize)) {
       if (projectType) {
         setProjectType(projectType);
@@ -38,13 +40,19 @@ const ProjectPreview = ({
         setProject(project);
         navigate(Path.PROJECT_DETAILS);
       }
+      // DESKTOP
     } else {
       if (projectType) {
+        const defaultProject = setDefaultProject(projectType);
         setProjectType(projectType);
+        // set default project to be the first project and display the desktop details
+        setProject(defaultProject);
         navigate(Path.DESKTOP_PROJECT_LIST);
       } else if (project) {
         setProject(project);
-        setDesktopShowProjectDetails(true);
+        if (setDesktopShowProjectDetails) {
+          setDesktopShowProjectDetails(true);
+        }
       }
     }
   };
