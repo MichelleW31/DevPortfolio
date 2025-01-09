@@ -2,6 +2,10 @@
 
 .ProjectPreviewContainer {
   width: 45%;
+
+  @media (min-width: $desktopWidth) {
+    width: 40%;
+  }
 }
 
 .ProjectPreview {

@@ -1,7 +1,7 @@
 @import '../../variables/_variables.scss';
 
 .HeaderContainer {
-  background-color: #ece8ff;
+  background-color: #fdfdff;
   display: flex;
   justify-content: center;
   -webkit-box-shadow: 0px 1px 18px -8px rgba(0, 0, 0, 0.75);
@@ -17,7 +17,6 @@
   }
 
   @media (min-width: $desktopWidth) {
-    background-color: #fdfdff;
     box-sizing: border-box;
     justify-content: space-between;
     padding: 20px 25px;
