@@ -1,0 +1,9 @@
+@import '../../variables/_variables.scss';
+
+.ActiveBar {
+  background-color: $midPurple;
+  border-radius: 2px;
+  height: 10px;
+  margin-top: 10px;
+  width: 100%;
+}

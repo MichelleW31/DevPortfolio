@@ -1,18 +1,37 @@
+@import '../../variables/_variables.scss';
+
 .ProjectPreviewContainer {
+  width: 45%;
+}
+
+.ProjectPreview {
   align-items: center;
-  background-color: #000;
+  border: 3px solid #fff;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   height: 190px;
-  width: 45%;
+  width: 100%;
 
-  p {
+  -webkit-box-shadow: inset 1px 1px 51px 15px rgba(84, 72, 161, 0.11);
+  -moz-box-shadow: inset 1px 1px 51px 15px rgba(84, 72, 161, 0.11);
+  box-shadow: inset 1px 1px 51px 15px rgba(84, 72, 161, 0.11);
+
+  .PreviewName {
+    color: #fff;
     font-family: 'Inter-Bold';
     font-size: 13px;
+
+    @media (min-width: $desktopWidth) {
+      color: $midPurple;
+    }
+  }
+
+  @media (min-width: $desktopWidth) {
+    border: 3px solid $midPurple;
   }
 }
 
-.ProjectPreviewContainer:hover {
+.ProjectPreview:hover {
   cursor: pointer;
 }

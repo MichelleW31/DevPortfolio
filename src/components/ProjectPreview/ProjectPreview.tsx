@@ -1,19 +1,22 @@
 // BASE MODULES
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 // CUSTOM MODULES
-import { IProject, IProjectType, Path } from '../../types';
+import { IProject, IProjectType, IState, Path } from '../../types';
 import { isDesktop } from '../../utilities/responsiveness';
 import useWindowSize from '../../hooks/windowSize';
 import { capitalizeFirstLetter } from '../../utilities/formatting';
 import { setProject, setProjectType } from '../../store/actions/projectActions';
 import styles from './ProjectPreview.module.scss';
 import { setDefaultProject } from '../../utilities/setProject';
+import ActiveBar from '../ActiveBar/ActiveBar';
 
 interface ProjectPreviewProps {
   projectType?: IProjectType;
   project?: IProject;
+  projectSelected: IProject;
   setProjectType: (projectType: IProjectType) => void;
   setProject: (project: IProject) => void;
   setDesktopShowProjectDetails?: (isTrue: boolean) => void;
@@ -22,11 +25,18 @@ interface ProjectPreviewProps {
 const ProjectPreview = ({
   projectType,
   project,
+  projectSelected,
   setProjectType,
   setProject,
   setDesktopShowProjectDetails,
 }: ProjectPreviewProps) => {
   const windowSize = useWindowSize();
+  const [selectedProjectName, setSelectedProjectName] = useState<string>(
+    projectSelected.name
+  );
+
+  // console.log('selectedProjectName', selectedProjectName);
+  // console.log('projectSelected', projectSelected);
 
   const navigate = useNavigate();
 
@@ -53,28 +63,49 @@ const ProjectPreview = ({
         if (setDesktopShowProjectDetails) {
           setDesktopShowProjectDetails(true);
         }
+        setSelectedProjectName(project.name);
       }
     }
   };
+
+  // const addBar = () => {
+  //   if (project) {
+  //     if (
+  //       isDesktop(windowSize) &&
+  //       projectSelected.name === selectedProjectName
+  //     ) {
+  //       console.log('hit');
+  //       return <ActiveBar />;
+  //     } else {
+  //       console.log('not hit');
+  //       console.log(
+  //         isDesktop(windowSize) && projectSelected.name === selectedProjectName
+  //       );
+  //       console.log('selectedProjectName', selectedProjectName);
+  //       console.log('projectSelected', projectSelected);
+  //       return null;
+  //     }
+  //   }
+  // };
 
   const previewName = projectType
     ? capitalizeFirstLetter(projectType.name)
     : project && capitalizeFirstLetter(project.name);
 
   return (
-    <section
-      className={styles.ProjectPreviewContainer}
-      onClick={() => projectClick()}
-    >
-      <p>{previewName}</p>
-      <section className={styles.ProjectPreviewImage}></section>
+    <section className={styles.ProjectPreviewContainer}>
+      <section className={styles.ProjectPreview} onClick={() => projectClick()}>
+        <p className={styles.PreviewName}>{previewName}</p>
+      </section>
+
+      {/* {addBar()} */}
     </section>
   );
 };
 
-const mapStateToProps = () => {
+const mapStateToProps = (state: IState) => {
   return {
-    // project: state.project.project,
+    projectSelected: state.project.project,
   };
 };
 

@@ -29,9 +29,6 @@ const ProjectList = ({ projectType }: ProjectListProps) => {
   const projects: IProject[] =
     projectData[projectType.type as keyof typeof projectData];
 
-  console.log('projects from project list component', projects);
-  console.log('projectType', projectType);
-
   const projectListView = projects.map((project) => {
     return (
       <ProjectPreview
