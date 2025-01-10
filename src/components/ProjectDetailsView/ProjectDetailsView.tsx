@@ -51,7 +51,7 @@ const ProjectDetailsView = ({ project }: ProjectDetailsViewProps) => {
         )}
         {project.live_link && (
           <p className={styles.LinkCopy}>
-            Live Link: <Link to={project.live_link}>{project.live_link}</Link>
+            Link to Site: <Link to={project.live_link}>{project.name}</Link>
           </p>
         )}
       </section>
