@@ -15,7 +15,7 @@ const Github = () => {
   return (
     <>
       {isDesktop(windowSize) ? (
-        <section>
+        <section className={styles.GithubContainer}>
           <FontAwesomeIcon
             icon={faGithub as IconProp}
             color="#5448a1"
@@ -33,7 +33,7 @@ const Github = () => {
           )}
         </section>
       ) : (
-        <section>
+        <section className={styles.GithubContainer}>
           <a
             href={SocialMediaLinks.GITHUB}
             target="_blank"

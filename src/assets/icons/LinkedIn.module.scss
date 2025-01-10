@@ -1,11 +1,12 @@
 @import '../../variables/_variables.scss';
 
-.Link {
+.LinkedContainer {
   margin-right: 20px;
+}
 
+.Link {
   @media (min-width: $desktopWidth) {
     color: $midPurple;
     margin-left: 20px;
-    margin-right: 0px;
   }
 }

@@ -1,11 +1,16 @@
 @import '../../variables/_variables.scss';
 
-.Link {
+.GithubContainer {
   margin-left: 20px;
 
   @media (min-width: $desktopWidth) {
+    margin-left: 0px;
+  }
+}
+
+.Link {
+  @media (min-width: $desktopWidth) {
     color: $midPurple;
     margin-left: 20px;
-    margin-right: 0px;
   }
 }

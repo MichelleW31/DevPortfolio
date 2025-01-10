@@ -15,7 +15,7 @@ const LinkedIn = () => {
   return (
     <>
       {isDesktop(windowSize) ? (
-        <section>
+        <section className={styles.LinkedContainer}>
           <FontAwesomeIcon
             icon={faLinkedin as IconProp}
             color="#5448a1"
@@ -33,7 +33,7 @@ const LinkedIn = () => {
           )}
         </section>
       ) : (
-        <section>
+        <section className={styles.LinkedContainer}>
           <a
             href={SocialMediaLinks.LINKEDIN}
             target="_blank"
