@@ -13,7 +13,7 @@ const Logo = (props: LogoProps) => {
     <>
       <img
         src={
-          'https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/my_logo_purple.png?raw=true'
+          'https://mydevportfolioimages.s3.us-west-1.amazonaws.com/my_logo_mid_purple.png'
         }
         style={{ height: 'auto', width: `${width}px` }}
       />
