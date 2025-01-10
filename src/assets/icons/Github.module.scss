@@ -1,8 +1,11 @@
 @import '../../variables/_variables.scss';
 
 .Link {
+  margin-left: 10px;
+
   @media (min-width: $desktopWidth) {
     color: $midPurple;
     margin-left: 20px;
+    margin-right: 0px;
   }
 }
