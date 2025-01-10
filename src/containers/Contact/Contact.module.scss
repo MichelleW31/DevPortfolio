@@ -52,7 +52,7 @@
   .BodyCopy {
     color: $grey;
     font-family: 'Inter-Regular';
-    font-size: 18px;
+    font-size: 16px;
 
     @media (min-width: $desktopWidth) {
       font-size: 17px;
@@ -127,7 +127,7 @@
 
   .IconContainer {
     display: flex;
-    // justify-content: space-between;
+    justify-content: center;
     margin-bottom: 30px;
     padding: 0 170px;
 
