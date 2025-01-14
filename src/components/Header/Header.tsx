@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <section className={styles.HeaderContainer}>
       <Link to={Path.ABOUT_ME}>
-        <Logo width={35} />
+        <Logo width={37} />
       </Link>
       {isDesktop(windowSize) && <Navigation />}
     </section>

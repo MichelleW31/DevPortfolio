@@ -4,6 +4,7 @@
 import Bar from '../../components/Bar/Bar';
 import { isDesktop } from '../../utilities/responsiveness';
 import useWindowSize from '../../hooks/windowSize';
+// import Animation from '../../components/Animation/Animation';
 import styles from './AboutMe.module.scss';
 
 const AboutMe = () => {
@@ -35,6 +36,8 @@ const AboutMe = () => {
           out of planes, I embrace each experience and adventure as a chance to
           learn and grow, much like my journey in tech.
         </p>
+
+        {/* {isDesktop(windowSize) && <Animation />} */}
       </section>
     </section>
   );
