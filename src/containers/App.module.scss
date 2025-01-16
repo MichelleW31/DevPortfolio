@@ -1,9 +1,8 @@
 @import '../variables/_variables.scss';
 
 .AppContainer {
-  @media (min-width: $desktopWidth) {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
 }

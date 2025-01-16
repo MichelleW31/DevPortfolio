@@ -67,11 +67,11 @@ const ProjectList = ({ projectType }: ProjectListProps) => {
         <section className={styles.ProjectListView}>{projectListView}</section>
       </section>
 
-      <section className={styles.ProjectDetails}>
-        {isDesktop(windowSize) && showDesktopProjectDetails ? (
+      {isDesktop(windowSize) && showDesktopProjectDetails ? (
+        <section className={styles.ProjectDetails}>
           <ProjectDetailsView />
-        ) : null}
-      </section>
+        </section>
+      ) : null}
     </section>
   );
 };
