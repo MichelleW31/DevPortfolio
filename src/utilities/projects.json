@@ -124,7 +124,8 @@
       "name": "MoDrip",
       "projectType": "side",
       "technologies": ["React Native", "Typescript", "NodeJS", "C++"],
-      "overview": "The Modrip project is a smart plant watering system that monitors and displays real-time data about soil moisture, room temperature, and humidity to help users maintain healthy plants. This system combines hardware and software, integrating a React Native mobile application with a sensor-equipped Arduino Nano for precise monitoring and control. The backend, developed using Node.js, facilitates communication between the app and the plant sensors.",
+      "overview": "The Modrip project is a smart plant watering system that monitors and displays real-time data about soil moisture, room temperature, and humidity to help users maintain healthy plants.",
+      "secondary_overview": "This system combines hardware and software, integrating a React Native mobile application with a sensor-equipped Arduino Nano for precise monitoring and control. The backend, developed using Node.js, facilitates communication between the app and the plant sensors.",
       "github_link": "",
       "live_link": "",
       "images": [

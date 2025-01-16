@@ -49,12 +49,16 @@
 
     .OverviewCopy {
       font-family: 'Inter-Regular';
-      font-size: 14px;
+      font-size: 15px;
       margin-bottom: 15px;
 
       @media (min-width: $desktopWidth) {
         font-size: 16px;
       }
+    }
+
+    .SecondaryOverviewCopy {
+      margin-top: 15px;
     }
 
     .LinkCopy {

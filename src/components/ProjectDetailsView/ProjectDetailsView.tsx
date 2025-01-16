@@ -42,6 +42,11 @@ const ProjectDetailsView = ({ project }: ProjectDetailsViewProps) => {
       <section className={styles.OverviewContainer}>
         <h3 className={styles.OverviewTitle}>Overview</h3>
         <p className={styles.OverviewCopy}>{project.overview}</p>
+        {project.secondary_overview && (
+          <p className={styles.SecondaryOverviewCopy}>
+            {project.secondary_overview}
+          </p>
+        )}
 
         {project.github_link && (
           <p className={styles.LinkCopy}>

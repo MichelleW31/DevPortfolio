@@ -41,6 +41,7 @@ export interface IProject {
   projectType: string;
   technologies: string[];
   overview: string;
+  secondary_overview?: string;
   live_link?: string;
   github_link?: string;
   images: IImage[];

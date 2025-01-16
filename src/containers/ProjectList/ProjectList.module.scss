@@ -3,6 +3,7 @@
 .ProjectListContainer {
   background-color: $darkPurple;
   flex: 1 1 auto;
+  margin-bottom: 35px;
 
   @media (min-width: $desktopWidth) {
     background-color: transparent;
@@ -69,5 +70,6 @@
 
   @media (min-width: $desktopWidth) {
     background-color: #fff;
+    margin-bottom: 0px;
   }
 }
