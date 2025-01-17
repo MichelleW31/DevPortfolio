@@ -86,7 +86,7 @@
       "projectType": "freelance",
       "technologies": ["React Native", "Typescript", "NodeJS"],
       "overview": "The TripSlip project involved designing and developing a mobile application to streamline the field trip management process for parents and teachers. Built with React Native and TypeScript, the app provides a user-friendly platform for parents to view field trip details and sign digital permission slips, while teachers can track permissions and manage student participation efficiently. The backend was developed using Node.js to ensure a scalable and reliable infrastructure.",
-      "live_link": "https://apps.apple.com/in/app/tripslip/id6466344424",
+      "live_link": "https://www.trytripslip.com/",
       "images": [
         {
           "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Tripslip/TS_2.png?raw=true",
@@ -169,7 +169,7 @@
       "technologies": ["React", "CSS"],
       "overview": "The Foodio project involved creating a modern web application that combines the aesthetics and functionality of a social media platform, like Instagram, with the utility of a recipe-sharing platform. Foodio allows users to explore a curated feed of recipes, view detailed instructions, and save their favorites by hearting them. ",
       "github_link": "https://github.com/MichelleW31/Foodio",
-      "live_link": "michellew31.github.io/Foodio/",
+      "live_link": "https://michellew31.github.io/Foodio/",
       "images": [
         {
           "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/FOOD_1_v2.png",
@@ -187,7 +187,7 @@
       "technologies": ["React", "NodeJS", "ExpressJS"],
       "overview": "The BGM Bank project involved developing a mock sign-in form for a fictional banking platform. The primary purpose of this project was to practice creating and managing API calls to handle user input securely and efficiently. The application simulates a real-world bank login system, allowing users to input their credentials and sending the data to a mock backend for processing. Built with React for the front end and Node.js for the backend, this project focused on integrating front-end forms with backend APIs.",
       "github_link": "https://github.com/MichelleW31/BGM_FE",
-      "live_link": "michellew31.github.io/BGM_FE/",
+      "live_link": "https://michellew31.github.io/BGM_FE/",
       "images": [
         {
           "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/BGM_1.png",

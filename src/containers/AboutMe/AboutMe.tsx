@@ -25,8 +25,8 @@ const AboutMe = () => {
         <p>
           As a full stack engineer with a strong design background, I thrive at
           the intersection of creativity and technology. My journey began with a
-          passion for creating visually engaging digital experiences and has
-          since evolved into a skill set that bridges front-end aesthetics with
+          passion for creating visually engaging experiences and has since
+          evolved into a skill set that bridges front-end aesthetics with
           back-end functionality.
         </p>
 

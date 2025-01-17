@@ -51,17 +51,17 @@ const ProjectDetailsView = ({ project }: ProjectDetailsViewProps) => {
         {project.github_link && (
           <p className={styles.LinkCopy}>
             Github Link:{' '}
-            <Link to={project.github_link} target="_blank">
+            <a href={project.github_link} target="_blank">
               {project.github_link}
-            </Link>
+            </a>
           </p>
         )}
         {project.live_link && (
           <p className={styles.LinkCopy}>
             Link to Site:{' '}
-            <Link to={project.live_link} target="_blank">
+            <a href={project.live_link} target="_blank">
               {project.name}
-            </Link>
+            </a>
           </p>
         )}
       </section>
