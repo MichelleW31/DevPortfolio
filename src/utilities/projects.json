@@ -85,7 +85,7 @@
       "name": "TripSlip",
       "projectType": "freelance",
       "technologies": ["React Native", "Typescript", "NodeJS"],
-      "overview": "The TripSlip project involved designing and developing a mobile application to streamline the field trip management process for parents and teachers. Built with React Native and TypeScript, the app provides a user-friendly platform for parents to view field trip details and sign digital permission slips, while teachers can track permissions and manage student participation efficiently. The backend was developed using Node.js to ensure a scalable and reliable infrastructure.",
+      "overview": "The TripSlip project involved designing and developing a mobile application to streamline the field trip management process for parents and teachers. Built with React Native,TypeScript and NodeJS the app provides a user-friendly platform for parents to view field trip details and sign digital permission slips, while teachers can track permissions and manage student participation efficiently.",
       "live_link": "https://www.trytripslip.com/",
       "images": [
         {
@@ -167,9 +167,9 @@
       "name": "Foodio",
       "projectType": "side",
       "technologies": ["React", "Typescript", "Vite", "Axios"],
-      "overview": "The Foodio project involved creating a modern web application that combines the aesthetics and functionality of a social media platform, like Instagram, with the utility of a recipe-sharing platform. Foodio allows users to explore a curated feed of recipes, view detailed instructions, and save their favorites by hearting them. ",
+      "overview": "The Foodio project involves creating a modern web application that combines the aesthetics and functionality of a social media platform, like Instagram, with the utility of a recipe-sharing platform. Foodio allows users to explore a curated feed of recipes, view detailed instructions, and save their favorites by hearting them. ",
       "github_link": "https://github.com/MichelleW31/Foodio",
-      "live_link": "https://michellew31.github.io/Foodio",
+      "live_link": "https://michellew31.github.io/Foodio/",
       "images": [
         {
           "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/FOOD_1_v2.png",
