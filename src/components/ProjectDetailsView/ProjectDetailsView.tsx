@@ -1,6 +1,5 @@
 // BASE MODULES
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
 
 // CUSTOM MODULES
 import ProjectImageGallery from '../ImageGallery/ProjectImageGallery';
