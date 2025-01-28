@@ -166,10 +166,10 @@
     {
       "name": "Foodio",
       "projectType": "side",
-      "technologies": ["React", "CSS"],
+      "technologies": ["React", "Typescript", "Vite", "Axios"],
       "overview": "The Foodio project involved creating a modern web application that combines the aesthetics and functionality of a social media platform, like Instagram, with the utility of a recipe-sharing platform. Foodio allows users to explore a curated feed of recipes, view detailed instructions, and save their favorites by hearting them. ",
       "github_link": "https://github.com/MichelleW31/Foodio",
-      "live_link": "https://michellew31.github.io/Foodio/",
+      "live_link": "https://michellew31.github.io/Foodio",
       "images": [
         {
           "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/FOOD_1_v2.png",
