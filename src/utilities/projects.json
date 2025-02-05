@@ -89,32 +89,24 @@
       "live_link": "https://www.trytripslip.com/",
       "images": [
         {
-          "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Tripslip/TS_2.png?raw=true",
-          "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Tripslip/TS_2.png?raw=true"
+          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/TS_2_v3.png",
+          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/TS_2_v3.png"
         },
         {
-          "original": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Tripslip/TS_3.png?raw=true",
-          "thumbnail": "https://github.com/MichelleW31/DevPortfolio/blob/main/src/assets/projectImages/Tripslip/TS_3.png?raw=true"
+          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/TS_4_v3.png",
+          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/TS_4_v3.png"
         },
         {
-          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/TS_4_v2.png",
-          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/TS_4_v2.png"
+          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/TS_5_v3.png",
+          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/TS_5_v3.png"
         },
         {
-          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/TS_5_v2.png",
-          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/TS_5_v2.png"
+          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/TS_7_v3.png",
+          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/TS_7_v3.png"
         },
         {
-          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/TS_6_v2.png",
-          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/TS_6_v2.png"
-        },
-        {
-          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/TS_7_v2.png",
-          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/TS_7_v2.png"
-        },
-        {
-          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/TS_8_v2.png",
-          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/TS_8_v2.png"
+          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/TS_8_v3.png",
+          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/TS_8_v3.png"
         }
       ]
     }
@@ -130,36 +122,40 @@
       "live_link": "",
       "images": [
         {
-          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_1_v2.png",
-          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_1_v2.png"
+          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_12_v2.png",
+          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_12_v2.png"
         },
         {
-          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_2_v2.png",
-          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_2_v2.png"
+          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_1_v3.png",
+          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_1_v3.png"
         },
         {
-          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_3_v2.png",
-          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_3_v2.png"
+          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_2_v3.png",
+          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_2_v3.png"
         },
         {
-          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_5_v2.png",
-          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_5_v2.png"
+          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_3_v3.png",
+          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_3_v3.png"
         },
         {
-          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_7_v2.png",
-          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_7_v2.png"
+          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_5_v3.png",
+          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_5_v3.png"
         },
         {
-          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_8_v2.png",
-          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_8_v2.png"
+          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_7_v3.png",
+          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_7_v3.png"
         },
         {
-          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_9_v2.png",
-          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_9_v2.png"
+          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_8_v3.png",
+          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_8_v3.png"
         },
         {
-          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_10_v2.png",
-          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_10_v2.png"
+          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_9_v3.png",
+          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_9_v3.png"
+        },
+        {
+          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_10_v3.png",
+          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/MD_10_v3.png"
         }
       ]
     },
@@ -172,30 +168,12 @@
       "live_link": "https://michellew31.github.io/Foodio/",
       "images": [
         {
-          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/FOOD_1_v2.png",
-          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/FOOD_1_v2.png"
+          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/FOOD_1_v3.png",
+          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/FOOD_1_v3.png"
         },
         {
-          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/FOOD_2_v2.png",
-          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/FOOD_2_v2.png"
-        }
-      ]
-    },
-    {
-      "name": "BGM Bank",
-      "projectType": "side",
-      "technologies": ["React", "NodeJS", "ExpressJS"],
-      "overview": "The BGM Bank project involved developing a mock sign-in form for a fictional banking platform. The primary purpose of this project was to practice creating and managing API calls to handle user input securely and efficiently. The application simulates a real-world bank login system, allowing users to input their credentials and sending the data to a mock backend for processing. Built with React for the front end and Node.js for the backend, this project focused on integrating front-end forms with backend APIs.",
-      "github_link": "https://github.com/MichelleW31/BGM_FE",
-      "live_link": "https://michellew31.github.io/BGM_FE/",
-      "images": [
-        {
-          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/BGM_1.png",
-          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/BGM_1.png"
-        },
-        {
-          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/BGM_2.png",
-          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/BGM_2.png"
+          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/FOOD_2_v3.png",
+          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/FOOD_2_v3.png"
         }
       ]
     }

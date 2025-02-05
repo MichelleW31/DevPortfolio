@@ -114,3 +114,9 @@ button:focus-visible {
   font-family: 'Inter-Black';
   src: local('Inter-Black'), url('./fonts/Inter-Black.otf') format('opentype');
 }
+
+@media (min-width: 1280px) {
+  .image-gallery-slide .image-gallery-image {
+    width: 55% !important;
+  }
+}
