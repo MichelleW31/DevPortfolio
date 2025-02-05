@@ -116,6 +116,18 @@ button:focus-visible {
 }
 
 @media (min-width: 1280px) {
+  .Dominos .image-gallery-slide .image-gallery-image {
+    width: 100% !important;
+  }
+
+  .AARP .image-gallery-slide .image-gallery-image {
+    width: 100% !important;
+  }
+
+  .Driveway .image-gallery-slide .image-gallery-image {
+    width: 100% !important;
+  }
+
   .image-gallery-slide .image-gallery-image {
     width: 55% !important;
   }

@@ -22,8 +22,12 @@ const ProjectDetailsView = ({ project }: ProjectDetailsViewProps) => {
     <TechnologyIcon techName={technology} key={technology} />
   ));
 
+  console.log(project);
+
   return (
-    <section className={styles.ProjectDetailsViewContainer}>
+    <section
+      className={`${styles.ProjectDetailsViewContainer} ${project.name}`}
+    >
       <section className={styles.NameCopyContainer}>
         <h2 className={styles.TitleCopy}>
           {capitalizeFirstLetter(project.name)}
