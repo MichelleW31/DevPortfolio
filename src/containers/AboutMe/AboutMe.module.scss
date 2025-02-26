@@ -6,6 +6,10 @@
 
   .NameCopyContainer {
     padding: 0px 35px;
+
+    @media (min-width: $desktopWidth) {
+      padding: 0px 65px;
+    }
   }
 
   .NameCopy {
@@ -40,6 +44,7 @@
 
     @media (min-width: $desktopWidth) {
       margin-top: 120px;
+      padding: 0px 65px;
       width: 50%;
     }
   }
