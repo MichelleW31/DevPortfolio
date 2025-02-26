@@ -2,10 +2,11 @@
 
 .FooterContainer {
   background-color: $darkPurple;
+  bottom: 0;
   color: #fff;
   font-size: 14px;
   padding: 23px 30px;
-  position: relative;
+  position: fixed;
   width: 100%;
 
   @media (min-width: $desktopWidth) {
