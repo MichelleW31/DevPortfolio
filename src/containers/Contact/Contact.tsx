@@ -21,6 +21,8 @@ const Contact = () => {
   const [messageSuccessful, setMessageSuccessful] = useState<boolean>(false);
   const [showMessageResults, setShowMessageResults] = useState<boolean>(false);
 
+  emailjs.init(import.meta.env.VITE_PUBLIC_KEY);
+
   // CLEAR INPUTS
   const clearInputs = () => {
     setName('');
@@ -31,12 +33,11 @@ const Contact = () => {
   // SEND MESSAGE
   const sendMessage = () => {
     emailjs
-      .send(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
-        { name, email, message },
-        { publicKey: import.meta.env.VITE_PUBLIC_KEY }
-      )
+      .send(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, {
+        name,
+        email,
+        message,
+      })
       .then(
         (result) => {
           console.log('Message sent successfully:', result.text);

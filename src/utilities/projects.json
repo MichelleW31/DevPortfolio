@@ -176,6 +176,23 @@
           "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/FOOD_2_v3.png"
         }
       ]
+    },
+    {
+      "name": "Blinker",
+      "projectType": "side",
+      "technologies": ["C++"],
+      "overview": "The blinker led demonstrates a simple wireless communication system using infrared (IR) technology, where one arduino nano acts as a remote control(transmitter) and another arduino nano functions as the receiver. The remote sends IR signals to toggle a blinking LED connected to the receiver. This project showcases the basics of IR communication, signal encoding/decoding, and remote device control using an arduino nano.",
+      "github_link": "https://github.com/MichelleW31/BlinkerLight",
+      "images": [
+        {
+          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/BL_1.png",
+          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/BL_1.png"
+        },
+        {
+          "original": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/BL_2.png",
+          "thumbnail": "https://mydevportfolioimages.s3.us-west-1.amazonaws.com/BL_2.png"
+        }
+      ]
     }
   ]
 }
