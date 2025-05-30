@@ -32,26 +32,29 @@ const Contact = () => {
 
   // SEND MESSAGE
   const sendMessage = () => {
-    emailjs
-      .send(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, {
-        name,
-        email,
-        message,
-      })
-      .then(
-        (result) => {
-          console.log('Message sent successfully:', result.text);
-          setShowMessageResults(true);
-          setMessageSuccessful(true);
-          clearInputs();
-        },
-        (error) => {
-          console.error('Error sending message:', error);
-          setShowMessageResults(true);
-          setMessageSuccessful(false);
-          clearInputs();
-        }
-      );
+    setShowMessageResults(true);
+    setMessageSuccessful(true);
+    clearInputs();
+    // emailjs
+    //   .send(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, {
+    //     name,
+    //     email,
+    //     message,
+    //   })
+    //   .then(
+    //     (result) => {
+    //       console.log('Message sent successfully:', result.text);
+    //       setShowMessageResults(true);
+    //       setMessageSuccessful(true);
+    //       clearInputs();
+    //     },
+    //     (error) => {
+    //       console.error('Error sending message:', error);
+    //       setShowMessageResults(true);
+    //       setMessageSuccessful(false);
+    //       clearInputs();
+    //     }
+    //   );
   };
 
   return (

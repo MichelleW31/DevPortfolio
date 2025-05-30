@@ -144,6 +144,9 @@
   .MessageConfirmCopyContainer {
     background-color: $darkPurple;
     padding: 10px 0;
+
+    @media (min-width: $desktopWidth) {
+    }
   }
 
   .MessageConfirmCopy {
