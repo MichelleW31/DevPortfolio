@@ -32,9 +32,6 @@ const Contact = () => {
 
   // SEND MESSAGE
   const sendMessage = () => {
-    setShowMessageResults(true);
-    setMessageSuccessful(true);
-    clearInputs();
     // emailjs
     //   .send(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, {
     //     name,
@@ -104,7 +101,9 @@ const Contact = () => {
             <button
               type="button"
               onClick={sendMessage}
-              className={styles.Button}
+              // className={styles.Button}
+              className={styles.DisabledButton}
+              disabled={true}
             >
               Send
             </button>

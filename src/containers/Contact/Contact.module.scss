@@ -126,6 +126,24 @@
     }
   }
 
+  .DisabledButton {
+    background-color: #e5d5ff;
+    border-radius: 3px;
+    color: #fff;
+    font-family: 'Inter-Bold';
+    margin: 0 0 60px;
+    width: 80%;
+
+    @media (min-width: $desktopWidth) {
+      width: 60%;
+    }
+  }
+
+  .DisabledButton:hover {
+    border: #e5d5ff;
+    cursor: not-allowed;
+  }
+
   .IconContainer {
     display: flex;
     justify-content: center;
